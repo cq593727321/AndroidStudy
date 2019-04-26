@@ -1,4 +1,4 @@
-package com.smartcomma.huawei.ui;
+package com.smartcomma.huawei.ui.setting;
 
 import android.app.ProgressDialog;
 import android.bluetooth.BluetoothAdapter;
@@ -27,7 +27,6 @@ import com.smartcomma.huawei.MyApplication;
 import com.smartcomma.huawei.R;
 import com.smartcomma.huawei.adapter.DeviceBluetoothConnectAdapter;
 import com.smartcomma.huawei.adapter.PairDeviceBluetoothConnectAdapter;
-import com.smartcomma.huawei.utils.SPUtils;
 import com.uk.tsl.rfid.asciiprotocol.AsciiCommander;
 
 import java.util.ArrayList;

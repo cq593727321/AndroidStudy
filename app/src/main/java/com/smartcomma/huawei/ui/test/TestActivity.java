@@ -1,4 +1,4 @@
-package com.smartcomma.huawei.ui;
+package com.smartcomma.huawei.ui.test;
 
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;

@@ -1,4 +1,4 @@
-package com.smartcomma.huawei.ui;
+package com.smartcomma.huawei.ui.test;
 
 import android.Manifest;
 import android.content.Intent;
@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.smartcomma.huawei.MyApplication;
 import com.smartcomma.huawei.R;
+import com.smartcomma.huawei.ui.setting.DeviceConnectActivity;
 import com.uk.tsl.rfid.asciiprotocol.commands.BarcodeCommand;
 import com.uk.tsl.rfid.asciiprotocol.commands.InventoryCommand;
 import com.uk.tsl.rfid.asciiprotocol.enumerations.TriState;

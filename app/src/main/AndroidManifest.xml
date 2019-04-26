@@ -31,8 +31,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.DeviceConnectActivity" />
-        <activity android:name=".ui.TestActivity" />
+        <activity android:name=".ui.setting.DeviceConnectActivity" />
+        <activity android:name=".ui.test.TestActivity" />
         <!-- 环境:sit/uat/pro -->
         <meta-data
             android:name="env"
@@ -43,7 +43,10 @@
             android:name="uniportal"
             android:value="true" />
 
-        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.test.MainActivity" />
+        <activity android:name=".ui.FunctionMenuActivity" />
+        <activity android:name=".ui.receipts.ReceiverScanActivity" />
+        <activity android:name=".ui.receipts.DoReceiverTaskActivity"></activity>
     </application>
 
 </manifest>

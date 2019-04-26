@@ -1,5 +1,6 @@
 package com.smartcomma.huawei.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
@@ -16,7 +17,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements View.OnFocusChangeListener {
     @BindView(R.id.login_ll_container)
     View root;
     @BindView(R.id.login_et_user)
@@ -29,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
     @OnClick(R.id.login_bt_login)
     void doLogin() {
         Snackbar.make(root, "登陆中...", Snackbar.LENGTH_SHORT).show();
+        startActivity(new Intent(this, FunctionMenuActivity.class));
     }
 
     @Override
@@ -36,6 +38,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
+        metLoginUser.setOnFocusChangeListener(this);
+        metLoginPassword.setOnFocusChangeListener(this);
         metLoginUser.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -83,4 +87,23 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onFocusChange(View view, boolean b) {
+        switch (view.getId()) {
+            case R.id.login_et_user:
+                if (b) {
+                    metLoginUser.setBackgroundResource(R.drawable.et_underline_selected);
+                } else {
+                    metLoginUser.setBackgroundResource(R.drawable.et_underline_unselected);
+                }
+                break;
+            case R.id.login_et_password:
+                if (b) {
+                    metLoginPassword.setBackgroundResource(R.drawable.et_underline_selected);
+                } else {
+                    metLoginPassword.setBackgroundResource(R.drawable.et_underline_unselected);
+                }
+                break;
+        }
+    }
 }
