@@ -1,19 +1,21 @@
 package com.smartcomma.huawei.Entity;
 
 public class ReceiverInfo {
-    private String materil;
+    private String material;
     private String companyBarcode;
     private String type;
+    private String location;
     private String num;
     private boolean isSelect = false;
     private boolean isReceiver;
 
-    public ReceiverInfo(String materil, String companyBarcode, String type, String num, boolean isReceiver) {
-        this.materil = materil;
+    public ReceiverInfo(String material, String companyBarcode, String type, String num, String location, boolean isReceiver) {
+        this.material = material;
         this.companyBarcode = companyBarcode;
         this.type = type;
         this.num = num;
         this.isReceiver = isReceiver;
+        this.location = location;
     }
 
     public boolean isReceiver() {
@@ -32,12 +34,20 @@ public class ReceiverInfo {
         isSelect = select;
     }
 
-    public String getMateril() {
-        return materil;
+    public String getMaterial() {
+        return material;
     }
 
-    public void setMateril(String materil) {
-        this.materil = materil;
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public String getCompanyBarcode() {

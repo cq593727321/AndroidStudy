@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.receipts.DoReceiverTaskActivity">
+    tools:context=".ui.bind.BindActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:text="RF494231264894313"
+            android:text="建账绑定"
             android:textColor="@color/color_white"
             android:textSize="18sp" />
 
@@ -32,11 +32,38 @@
 
     </RelativeLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/receiver_task_rv"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/search_background_color"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/receipt_shape_edit_text"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/ic_scan"
+            android:hint="请扫描"
+            android:imeOptions="actionDone"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_number_and_assets"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,7 +77,7 @@
             android:layout_marginTop="1dp"
             android:layout_weight="1"
             android:background="@drawable/selector_receiver_button_bg"
-            android:text="全部收货(5)"
+            android:text="应收(5)"
             android:textSize="16sp" />
 
         <Button
@@ -61,7 +88,7 @@
             android:layout_marginTop="1dp"
             android:layout_weight="1"
             android:background="@drawable/selector_receiver_button_bg"
-            android:text="收货(已选2)"
+            android:text="实收(2)"
             android:textSize="16sp" />
 
     </LinearLayout>

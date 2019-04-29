@@ -15,7 +15,9 @@ import com.google.gson.Gson;
 import com.smartcomma.huawei.Entity.HomeItem;
 import com.smartcomma.huawei.R;
 import com.smartcomma.huawei.adapter.HomeAdapter;
+import com.smartcomma.huawei.ui.bind.AccountingScanActivity;
 import com.smartcomma.huawei.ui.receipts.ReceiverScanActivity;
+import com.smartcomma.huawei.ui.setting.LocationListActivity;
 import com.smartcomma.huawei.view.ItemDecorationAlbumColumns;
 
 import java.util.ArrayList;
@@ -23,11 +25,17 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class FunctionMenuActivity extends AppCompatActivity implements BaseQuickAdapter.OnItemClickListener {
     @BindView(R.id.home_rv)
     RecyclerView mRecyclerView;
     HomeAdapter mAdapter;
+
+    @OnClick(R.id.home_iv_setting)
+    void setting() {
+        startActivity(new Intent(this, LocationListActivity.class));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,20 +45,20 @@ public class FunctionMenuActivity extends AppCompatActivity implements BaseQuick
         mAdapter = new HomeAdapter(R.layout.item_home, getData());
         mRecyclerView.setLayoutManager(new GridLayoutManager(FunctionMenuActivity.this, 3));
 //        mRecyclerView.addItemDecoration(new ItemDecorationAlbumColumns(2, 3));
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.HORIZONTAL));
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.HORIZONTAL));
         mRecyclerView.setAdapter(mAdapter);
         mAdapter.setOnItemClickListener(this);
     }
 
     private List<HomeItem> getData() {
         List<HomeItem> homeItems = new ArrayList<>();
-        homeItems.add(new HomeItem(R.drawable.ic_module_receiver, "收货"));
-        homeItems.add(new HomeItem(R.drawable.ic_module_receiver, "建账"));
-        homeItems.add(new HomeItem(R.drawable.ic_module_receiver, "退库"));
-        homeItems.add(new HomeItem(R.drawable.ic_module_receiver, "周转收货"));
-        homeItems.add(new HomeItem(R.drawable.ic_module_receiver, "周转发货"));
-        homeItems.add(new HomeItem(R.drawable.ic_module_receiver, "盘点"));
+        homeItems.add(new HomeItem(R.drawable.ic_shouhuo, "收货"));
+        homeItems.add(new HomeItem(R.drawable.ic_jianzhang, "建账"));
+        homeItems.add(new HomeItem(R.drawable.ic_tuiku, "退库"));
+        homeItems.add(new HomeItem(R.drawable.ic_zhouzhuan_shouhuo, "周转收货"));
+        homeItems.add(new HomeItem(R.drawable.ic_zhouzhuan_fahuo, "周转发货"));
+        homeItems.add(new HomeItem(R.drawable.ic_pandian, "盘点"));
         return homeItems;
     }
 
@@ -62,7 +70,7 @@ public class FunctionMenuActivity extends AppCompatActivity implements BaseQuick
                 startActivity(new Intent(FunctionMenuActivity.this, ReceiverScanActivity.class));
                 break;
             case 1:
-                Toast.makeText(this, position + "di00", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(FunctionMenuActivity.this, AccountingScanActivity.class));
                 break;
             case 2:
                 Toast.makeText(this, position + "di00", Toast.LENGTH_SHORT).show();

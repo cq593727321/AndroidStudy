@@ -21,15 +21,18 @@ public class ReceiverGoodsAdapter extends BaseQuickAdapter<ReceiverInfo, BaseVie
     protected void convert(final BaseViewHolder helper, final ReceiverInfo item) {
         if (item.isReceiver()) {
             helper.setVisible(R.id.receiver_cb, false);
-            helper.setBackgroundColor(R.id.item_receiver_view, mContext.getResources().getColor(R.color.color_gary));
+            helper.setBackgroundColor(R.id.item_receiver_view, mContext.getResources().getColor(R.color.background_color));
         } else {
             helper.setVisible(R.id.receiver_cb, true);
             helper.setBackgroundColor(R.id.item_receiver_view, mContext.getResources().getColor(R.color.color_white));
         }
-        helper.setText(R.id.receiver_material_code, item.getMateril())
+        helper.setText(R.id.receiver_material_code, item.getMaterial())
                 .setText(R.id.receiver_material_barcode, item.getCompanyBarcode())
                 .setText(R.id.receiver_material_type, item.getType())
-                .setText(R.id.receiver_material_number, item.getNum());
+                .setText(R.id.receiver_material_number, "数量: " + item.getNum())
+                .setText(R.id.receiver_material_location, item.getLocation())
+                .addOnClickListener(R.id.receiver_material_location)
+                .addOnClickListener(R.id.receiver_material_number);
         helper.setOnCheckedChangeListener(R.id.receiver_cb, new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {

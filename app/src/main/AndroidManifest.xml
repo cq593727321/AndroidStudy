@@ -46,7 +46,11 @@
         <activity android:name=".ui.test.MainActivity" />
         <activity android:name=".ui.FunctionMenuActivity" />
         <activity android:name=".ui.receipts.ReceiverScanActivity" />
-        <activity android:name=".ui.receipts.DoReceiverTaskActivity"></activity>
+        <activity android:name=".ui.receipts.DoReceiverTaskActivity" />
+        <activity android:name=".ui.setting.LocationListActivity" />
+        <activity android:name=".ui.setting.EditAndSaveLocationActivity" />
+        <activity android:name=".ui.bind.AccountingScanActivity" />
+        <activity android:name=".ui.bind.BindActivity"></activity>
     </application>
 
 </manifest>

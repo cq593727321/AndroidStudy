@@ -1,37 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_receiver_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="?android:selectableItemBackground"
-    android:orientation="vertical">
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp">
 
+
+    <CheckBox
+        android:id="@+id/receiver_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <LinearLayout
-        android:id="@+id/item_receiver_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="8dp">
-
-        <CheckBox
-            android:id="@+id/receiver_cb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="12dp"
-            android:orientation="vertical">
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="物料编码:"
+                android:textColor="@color/color_black"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/receiver_material_code"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="8dp"
+                android:text="795232365"
+                android:textColor="@color/color_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:text="收货"
+                android:text="类型:"
+                android:textColor="@color/color_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/receiver_material_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="8dp"
+                android:text="条码建账"
+                android:textColor="@color/color_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="公司条码:"
                 android:textColor="@color/color_black"
                 android:textSize="16sp" />
 
@@ -40,25 +82,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:text="收货"
+                android:paddingLeft="8dp"
+                android:text="GARGAGA45454AFD53"
                 android:textColor="@color/color_black"
                 android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/receiver_material_type"
-                android:layout_width="match_parent"
+                android:id="@+id/receiver_material_location"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/ic_edit"
                 android:fontFamily="sans-serif"
-                android:text="收货"
+                android:text="东莞研发基地10栋1403室"
                 android:textColor="@color/color_black"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/receiver_material_number"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/ic_edit"
                 android:fontFamily="sans-serif"
-                android:text="收货"
+                android:text="数量:  1"
                 android:textColor="@color/color_black"
                 android:textSize="16sp" />
         </LinearLayout>
