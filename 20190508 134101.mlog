@@ -1,0 +1,965 @@
+134101.349 I t1 PhoneState env:uat
+134101.350 I t1 PhoneState appName:com.huawei.sde.iot
+134101.352 I t1 PhoneState appVersion:1.0
+134101.353 I t1 PhoneState appCode:1
+134101.354 I t1 PhoneState phoneType:PCT-AL10
+134101.355 I t1 PhoneState osVersion:9
+134101.360 I t1 PhoneState cpuInfo:AArch64 Processor rev 0 (aarch64) 
+134101.381 I t1 PhoneState timeZone:GMT+08:00
+134101.381 P t1 Login Login.login startTime:2019-05-08 13:41:01:328
+134101.384 P t1 Login Login.structHeaderForLogin
+134101.391 P t1 Login EncUtils.getDefPubKey:uat
+134101.398 P t1 Login EncUtils.getDefPubKey:uat
+134101.403 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+134101.444 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:132)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+134101.451 P t1 Network traceId = b996ce9e-b9ca-4529-9462-48f103f5079f, uuid = ac1f1c3a262b1e9d
+134102.027 P t3943 Network traceId = b996ce9e-b9ca-4529-9462-48f103f5079f, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+134102.048 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+134102.052 P t1 Login LoginTask endTime:2019-05-08 13:41:02:049
+134102.056 P t1 Login Login.login endTime:2019-05-08 13:41:02:052
+134137.902 P t1 Login Login.login startTime:2019-05-08 13:41:37:886
+134137.904 P t1 Login Login.structHeaderForLogin
+134137.910 P t1 Login EncUtils.getDefPubKey:uat
+134137.921 P t1 Login EncUtils.getDefPubKey:uat
+134137.927 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+134137.969 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:132)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+134137.978 P t1 Network traceId = ffbd3ac5-8038-4e98-a95d-15286b3c34e1, uuid = ac1f1c3a262b1e9d
+134145.912 P t3953 Network traceId = ffbd3ac5-8038-4e98-a95d-15286b3c34e1, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+134145.943 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+134145.955 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+134145.959 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+134145.962 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+134145.965 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+134145.966 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+134145.986 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+134145.992 P t1 CookieUtils hwssotinter=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; hwssot=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; magot3=26522575426306; mcloudnkgbeta1magumag=0000yMlIWn5HlPQEjLuRAFzbvNn:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=C3-CB-46-D7-F2-D6-26-CE-8B-C7-7A-AF-C5-60-BB-53-7E-92-4B-EE-F9-FC-64-7D-BE-7F-AB-8D-A0-70-55-75-0C-E0-18-08-72-5E-D5-5B; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; logFlag=in; hwsso_uniportal=edvFuQUSS1sInsVNy77UkhLyot6L2v2tA_akumN6ZixwWViusFD3PcMsLwxpqf7wo0fqr77xTtUidB5xGL6zOEP1k0B4SzK0_adJdiFLKNOPBOyflqT7w8gvNw0WZdeKQl2_bF0yTBwJ23eMiensuctARBuKSYWJeSjfQmSQtTrXwkwMADjbkQNhM4HT2alLKL3e4Lu2_b8dmz0bSlrpE0YY0ThLF5Vyi5JZOEIGYs5xmgy99grdlDmsHIOj9qGKC34XirWoaJChMOUrvJ6bfomTi9Q1RVgFm2NYkXEQ_axMehNe4QoWVnbFB0iYG_bOy238m73t2kLQkYiX1T7t8OEI1YdQ_c_c
+134145.997 P t1 Network traceId = 947a829f-016d-4151-82f9-f497418ef622, uuid = ac1f1c3a262b1e9d
+134146.001 P t3953 CookieUtils hwssotinter=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; hwssot=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; magot3=26522575426306; mcloudnkgbeta1magumag=0000yMlIWn5HlPQEjLuRAFzbvNn:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=C3-CB-46-D7-F2-D6-26-CE-8B-C7-7A-AF-C5-60-BB-53-7E-92-4B-EE-F9-FC-64-7D-BE-7F-AB-8D-A0-70-55-75-0C-E0-18-08-72-5E-D5-5B; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; logFlag=in; hwsso_uniportal=edvFuQUSS1sInsVNy77UkhLyot6L2v2tA_akumN6ZixwWViusFD3PcMsLwxpqf7wo0fqr77xTtUidB5xGL6zOEP1k0B4SzK0_adJdiFLKNOPBOyflqT7w8gvNw0WZdeKQl2_bF0yTBwJ23eMiensuctARBuKSYWJeSjfQmSQtTrXwkwMADjbkQNhM4HT2alLKL3e4Lu2_b8dmz0bSlrpE0YY0ThLF5Vyi5JZOEIGYs5xmgy99grdlDmsHIOj9qGKC34XirWoaJChMOUrvJ6bfomTi9Q1RVgFm2NYkXEQ_axMehNe4QoWVnbFB0iYG_bOy238m73t2kLQkYiX1T7t8OEI1YdQ_c_c
+134146.002 P t3953 Network hwssotinter=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; hwssot=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; magot3=26522575426306; mcloudnkgbeta1magumag=0000yMlIWn5HlPQEjLuRAFzbvNn:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=C3-CB-46-D7-F2-D6-26-CE-8B-C7-7A-AF-C5-60-BB-53-7E-92-4B-EE-F9-FC-64-7D-BE-7F-AB-8D-A0-70-55-75-0C-E0-18-08-72-5E-D5-5B; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; logFlag=in; hwsso_uniportal=edvFuQUSS1sInsVNy77UkhLyot6L2v2tA_akumN6ZixwWViusFD3PcMsLwxpqf7wo0fqr77xTtUidB5xGL6zOEP1k0B4SzK0_adJdiFLKNOPBOyflqT7w8gvNw0WZdeKQl2_bF0yTBwJ23eMiensuctARBuKSYWJeSjfQmSQtTrXwkwMADjbkQNhM4HT2alLKL3e4Lu2_b8dmz0bSlrpE0YY0ThLF5Vyi5JZOEIGYs5xmgy99grdlDmsHIOj9qGKC34XirWoaJChMOUrvJ6bfomTi9Q1RVgFm2NYkXEQ_axMehNe4QoWVnbFB0iYG_bOy238m73t2kLQkYiX1T7t8OEI1YdQ_c_c
+134146.013 P t3953 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+134146.025 P t1 Login LoginTask endTime:2019-05-08 13:41:46:023
+134146.027 P t1 Login you does not compile lark-mdm.jar
+134146.028 P t1 Login use X86Storage
+134146.035 P t1 Login Login.login endTime:2019-05-08 13:41:46:034
+134146.036 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+134146.088 P t1 CookieUtils hwssotinter=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; hwssot=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; magot3=26522575426306; mcloudnkgbeta1magumag=0000yMlIWn5HlPQEjLuRAFzbvNn:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=C3-CB-46-D7-F2-D6-26-CE-8B-C7-7A-AF-C5-60-BB-53-7E-92-4B-EE-F9-FC-64-7D-BE-7F-AB-8D-A0-70-55-75-0C-E0-18-08-72-5E-D5-5B; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; logFlag=in; hwsso_uniportal=edvFuQUSS1sInsVNy77UkhLyot6L2v2tA_akumN6ZixwWViusFD3PcMsLwxpqf7wo0fqr77xTtUidB5xGL6zOEP1k0B4SzK0_adJdiFLKNOPBOyflqT7w8gvNw0WZdeKQl2_bF0yTBwJ23eMiensuctARBuKSYWJeSjfQmSQtTrXwkwMADjbkQNhM4HT2alLKL3e4Lu2_b8dmz0bSlrpE0YY0ThLF5Vyi5JZOEIGYs5xmgy99grdlDmsHIOj9qGKC34XirWoaJChMOUrvJ6bfomTi9Q1RVgFm2NYkXEQ_axMehNe4QoWVnbFB0iYG_bOy238m73t2kLQkYiX1T7t8OEI1YdQ_c_c
+134146.089 P t1 Network Network.get start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/sde_iot/test/all | {appVersion:1, cookie:hwssotinter=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; hwssot=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; magot3=26522575426306; mcloudnkgbeta1magumag=0000yMlIWn5HlPQEjLuRAFzbvNn:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=C3-CB-46-D7-F2-D6-26-CE-8B-C7-7A-AF-C5-60-BB-53-7E-92-4B-EE-F9-FC-64-7D-BE-7F-AB-8D-A0-70-55-75-0C-E0-18-08-72-5E-D5-5B; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; logFlag=in; hwsso_uniportal=edvFuQUSS1sInsVNy77UkhLyot6L2v2tA_akumN6ZixwWViusFD3PcMsLwxpqf7wo0fqr77xTtUidB5xGL6zOEP1k0B4SzK0_adJdiFLKNOPBOyflqT7w8gvNw0WZdeKQl2_bF0yTBwJ23eMiensuctARBuKSYWJeSjfQmSQtTrXwkwMADjbkQNhM4HT2alLKL3e4Lu2_b8dmz0bSlrpE0YY0ThLF5Vyi5JZOEIGYs5xmgy99grdlDmsHIOj9qGKC34XirWoaJChMOUrvJ6bfomTi9Q1RVgFm2NYkXEQ_axMehNe4QoWVnbFB0iYG_bOy238m73t2kLQkYiX1T7t8OEI1YdQ_c_c, appName:sde_iot, osTarget:0, uuid:f7db247a6c644987b7f123f6c956f1a0, deviceName:HONOR V20}
+134146.091 P t1 Network traceId = faf90cda-4b69-43b7-b538-e71b03ee731b, uuid = f7db247a6c644987b7f123f6c956f1a0
+134146.094 P t3953 CookieUtils hwssotinter=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; hwssot=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; magot3=26522575426306; mcloudnkgbeta1magumag=0000yMlIWn5HlPQEjLuRAFzbvNn:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=C3-CB-46-D7-F2-D6-26-CE-8B-C7-7A-AF-C5-60-BB-53-7E-92-4B-EE-F9-FC-64-7D-BE-7F-AB-8D-A0-70-55-75-0C-E0-18-08-72-5E-D5-5B; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; logFlag=in; hwsso_uniportal=edvFuQUSS1sInsVNy77UkhLyot6L2v2tA_akumN6ZixwWViusFD3PcMsLwxpqf7wo0fqr77xTtUidB5xGL6zOEP1k0B4SzK0_adJdiFLKNOPBOyflqT7w8gvNw0WZdeKQl2_bF0yTBwJ23eMiensuctARBuKSYWJeSjfQmSQtTrXwkwMADjbkQNhM4HT2alLKL3e4Lu2_b8dmz0bSlrpE0YY0ThLF5Vyi5JZOEIGYs5xmgy99grdlDmsHIOj9qGKC34XirWoaJChMOUrvJ6bfomTi9Q1RVgFm2NYkXEQ_axMehNe4QoWVnbFB0iYG_bOy238m73t2kLQkYiX1T7t8OEI1YdQ_c_c
+134146.098 P t3953 CookieUtils hwssotinter=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; hwssot=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; magot3=26522575426306; mcloudnkgbeta1magumag=0000yMlIWn5HlPQEjLuRAFzbvNn:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=C3-CB-46-D7-F2-D6-26-CE-8B-C7-7A-AF-C5-60-BB-53-7E-92-4B-EE-F9-FC-64-7D-BE-7F-AB-8D-A0-70-55-75-0C-E0-18-08-72-5E-D5-5B; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; logFlag=in; hwsso_uniportal=edvFuQUSS1sInsVNy77UkhLyot6L2v2tA_akumN6ZixwWViusFD3PcMsLwxpqf7wo0fqr77xTtUidB5xGL6zOEP1k0B4SzK0_adJdiFLKNOPBOyflqT7w8gvNw0WZdeKQl2_bF0yTBwJ23eMiensuctARBuKSYWJeSjfQmSQtTrXwkwMADjbkQNhM4HT2alLKL3e4Lu2_b8dmz0bSlrpE0YY0ThLF5Vyi5JZOEIGYs5xmgy99grdlDmsHIOj9qGKC34XirWoaJChMOUrvJ6bfomTi9Q1RVgFm2NYkXEQ_axMehNe4QoWVnbFB0iYG_bOy238m73t2kLQkYiX1T7t8OEI1YdQ_c_c
+134146.099 P t3953 Network hwssotinter=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; hwssot=4C-3F-48-D2-57-F4-20-D6-3B-58-78-6F-6C-74-81-77; magot3=26522575426306; mcloudnkgbeta1magumag=0000yMlIWn5HlPQEjLuRAFzbvNn:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=C3-CB-46-D7-F2-D6-26-CE-8B-C7-7A-AF-C5-60-BB-53-7E-92-4B-EE-F9-FC-64-7D-BE-7F-AB-8D-A0-70-55-75-0C-E0-18-08-72-5E-D5-5B; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; logFlag=in; hwsso_uniportal=edvFuQUSS1sInsVNy77UkhLyot6L2v2tA_akumN6ZixwWViusFD3PcMsLwxpqf7wo0fqr77xTtUidB5xGL6zOEP1k0B4SzK0_adJdiFLKNOPBOyflqT7w8gvNw0WZdeKQl2_bF0yTBwJ23eMiensuctARBuKSYWJeSjfQmSQtTrXwkwMADjbkQNhM4HT2alLKL3e4Lu2_b8dmz0bSlrpE0YY0ThLF5Vyi5JZOEIGYs5xmgy99grdlDmsHIOj9qGKC34XirWoaJChMOUrvJ6bfomTi9Q1RVgFm2NYkXEQ_axMehNe4QoWVnbFB0iYG_bOy238m73t2kLQkYiX1T7t8OEI1YdQ_c_c
+134146.104 P t3953 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+134254.221 P t1 Login Login.login startTime:2019-05-08 13:42:54:202
+134254.223 P t1 Login Login.structHeaderForLogin
+134254.231 P t1 Login EncUtils.getDefPubKey:uat
+134254.239 P t1 Login EncUtils.getDefPubKey:uat
+134254.245 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+134254.298 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:131)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+134254.310 P t1 Network traceId = c586df72-66a2-4092-bf71-eaf0a736482d, uuid = ac1f1c3a262b1e9d
+134254.960 P t3997 Network traceId = c586df72-66a2-4092-bf71-eaf0a736482d, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+134254.985 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+134254.989 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+134254.991 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+134254.993 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+134254.994 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+134254.997 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+134255.010 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+134255.013 P t1 CookieUtils sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; logFlag=in; hwssotinter=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; hwssot=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; magot3=26522575653411; mcloudnkgbeta1magumag=00007O2LhtuAgAwOh4gIYoxqgl-:nkgts625j134mwc_CloneID; uid=CC-31-CF-CB-3F-C2-CF-41; sid=E5-FD-06-B7-34-56-B4-9D-34-49-29-0B-C5-5C-06-A2-FC-6C-B3-33-43-D6-9D-A4-80-B7-5D-94-CC-8B-87-1B-B1-BF-19-7F-34-05-21-22; suid=CC-31-CF-CB-3F-C2-CF-41; hwsso_uniportal=Kt3mLwyWyfQvH_bhLGrp4ozo4WkH9D6nY81EqDfIXT8XliLjTvv9OIfnGR2tL0UsiSg2wcpMr4BfWYSUMmsd9Pf4CgJYIZygwVhf7isXdCrMMTTtakUbjDGjm_aoUvyCAaWai3ue4qsv5DYARv_bmR_a_aIdYV32RERM8KW9OIDbvcTy_afDOTtIlhGGBN9g9skqrg8vM0zPq1TOiw_aZTzLybi3muFt5CFJDyw3Lk7dBzw8gcKEHRWHBIbUqA7ckx5tMhFSz6PJxU55THagDZbVV9lw0BTtkrffbggOvfp0i2PeaflIB17LQb5tyFuk_aPkS_aJH5rH2c41rp6zfll4pbQ0V7A_c_c
+134255.017 P t1 Network traceId = 4f80a0f0-a9ce-4c3e-a309-7e7be2a0306e, uuid = ac1f1c3a262b1e9d
+134255.020 P t3997 CookieUtils sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; logFlag=in; hwssotinter=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; hwssot=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; magot3=26522575653411; mcloudnkgbeta1magumag=00007O2LhtuAgAwOh4gIYoxqgl-:nkgts625j134mwc_CloneID; uid=CC-31-CF-CB-3F-C2-CF-41; sid=E5-FD-06-B7-34-56-B4-9D-34-49-29-0B-C5-5C-06-A2-FC-6C-B3-33-43-D6-9D-A4-80-B7-5D-94-CC-8B-87-1B-B1-BF-19-7F-34-05-21-22; suid=CC-31-CF-CB-3F-C2-CF-41; hwsso_uniportal=Kt3mLwyWyfQvH_bhLGrp4ozo4WkH9D6nY81EqDfIXT8XliLjTvv9OIfnGR2tL0UsiSg2wcpMr4BfWYSUMmsd9Pf4CgJYIZygwVhf7isXdCrMMTTtakUbjDGjm_aoUvyCAaWai3ue4qsv5DYARv_bmR_a_aIdYV32RERM8KW9OIDbvcTy_afDOTtIlhGGBN9g9skqrg8vM0zPq1TOiw_aZTzLybi3muFt5CFJDyw3Lk7dBzw8gcKEHRWHBIbUqA7ckx5tMhFSz6PJxU55THagDZbVV9lw0BTtkrffbggOvfp0i2PeaflIB17LQb5tyFuk_aPkS_aJH5rH2c41rp6zfll4pbQ0V7A_c_c
+134255.021 P t3997 Network sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; logFlag=in; hwssotinter=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; hwssot=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; magot3=26522575653411; mcloudnkgbeta1magumag=00007O2LhtuAgAwOh4gIYoxqgl-:nkgts625j134mwc_CloneID; uid=CC-31-CF-CB-3F-C2-CF-41; sid=E5-FD-06-B7-34-56-B4-9D-34-49-29-0B-C5-5C-06-A2-FC-6C-B3-33-43-D6-9D-A4-80-B7-5D-94-CC-8B-87-1B-B1-BF-19-7F-34-05-21-22; suid=CC-31-CF-CB-3F-C2-CF-41; hwsso_uniportal=Kt3mLwyWyfQvH_bhLGrp4ozo4WkH9D6nY81EqDfIXT8XliLjTvv9OIfnGR2tL0UsiSg2wcpMr4BfWYSUMmsd9Pf4CgJYIZygwVhf7isXdCrMMTTtakUbjDGjm_aoUvyCAaWai3ue4qsv5DYARv_bmR_a_aIdYV32RERM8KW9OIDbvcTy_afDOTtIlhGGBN9g9skqrg8vM0zPq1TOiw_aZTzLybi3muFt5CFJDyw3Lk7dBzw8gcKEHRWHBIbUqA7ckx5tMhFSz6PJxU55THagDZbVV9lw0BTtkrffbggOvfp0i2PeaflIB17LQb5tyFuk_aPkS_aJH5rH2c41rp6zfll4pbQ0V7A_c_c
+134255.026 P t3997 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+134255.038 P t1 Login LoginTask endTime:2019-05-08 13:42:55:036
+134255.040 P t1 Login you does not compile lark-mdm.jar
+134255.041 P t1 Login use X86Storage
+134255.048 P t1 Login Login.login endTime:2019-05-08 13:42:55:047
+134255.049 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+134255.100 P t1 CookieUtils sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; logFlag=in; hwssotinter=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; hwssot=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; magot3=26522575653411; mcloudnkgbeta1magumag=00007O2LhtuAgAwOh4gIYoxqgl-:nkgts625j134mwc_CloneID; uid=CC-31-CF-CB-3F-C2-CF-41; sid=E5-FD-06-B7-34-56-B4-9D-34-49-29-0B-C5-5C-06-A2-FC-6C-B3-33-43-D6-9D-A4-80-B7-5D-94-CC-8B-87-1B-B1-BF-19-7F-34-05-21-22; suid=CC-31-CF-CB-3F-C2-CF-41; hwsso_uniportal=Kt3mLwyWyfQvH_bhLGrp4ozo4WkH9D6nY81EqDfIXT8XliLjTvv9OIfnGR2tL0UsiSg2wcpMr4BfWYSUMmsd9Pf4CgJYIZygwVhf7isXdCrMMTTtakUbjDGjm_aoUvyCAaWai3ue4qsv5DYARv_bmR_a_aIdYV32RERM8KW9OIDbvcTy_afDOTtIlhGGBN9g9skqrg8vM0zPq1TOiw_aZTzLybi3muFt5CFJDyw3Lk7dBzw8gcKEHRWHBIbUqA7ckx5tMhFSz6PJxU55THagDZbVV9lw0BTtkrffbggOvfp0i2PeaflIB17LQb5tyFuk_aPkS_aJH5rH2c41rp6zfll4pbQ0V7A_c_c
+134255.101 P t1 Network Network.get start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/sde_iot/test/all | {appVersion:1, cookie:sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; logFlag=in; hwssotinter=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; hwssot=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; magot3=26522575653411; mcloudnkgbeta1magumag=00007O2LhtuAgAwOh4gIYoxqgl-:nkgts625j134mwc_CloneID; uid=CC-31-CF-CB-3F-C2-CF-41; sid=E5-FD-06-B7-34-56-B4-9D-34-49-29-0B-C5-5C-06-A2-FC-6C-B3-33-43-D6-9D-A4-80-B7-5D-94-CC-8B-87-1B-B1-BF-19-7F-34-05-21-22; suid=CC-31-CF-CB-3F-C2-CF-41; hwsso_uniportal=Kt3mLwyWyfQvH_bhLGrp4ozo4WkH9D6nY81EqDfIXT8XliLjTvv9OIfnGR2tL0UsiSg2wcpMr4BfWYSUMmsd9Pf4CgJYIZygwVhf7isXdCrMMTTtakUbjDGjm_aoUvyCAaWai3ue4qsv5DYARv_bmR_a_aIdYV32RERM8KW9OIDbvcTy_afDOTtIlhGGBN9g9skqrg8vM0zPq1TOiw_aZTzLybi3muFt5CFJDyw3Lk7dBzw8gcKEHRWHBIbUqA7ckx5tMhFSz6PJxU55THagDZbVV9lw0BTtkrffbggOvfp0i2PeaflIB17LQb5tyFuk_aPkS_aJH5rH2c41rp6zfll4pbQ0V7A_c_c, appName:sde_iot, osTarget:0, uuid:f7db247a6c644987b7f123f6c956f1a0, deviceName:HONOR V20}
+134255.103 P t1 Network traceId = 5df7977e-9a89-4999-b113-8a2c50516d7a, uuid = f7db247a6c644987b7f123f6c956f1a0
+134255.108 P t3997 CookieUtils sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; logFlag=in; hwssotinter=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; hwssot=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; magot3=26522575653411; mcloudnkgbeta1magumag=00007O2LhtuAgAwOh4gIYoxqgl-:nkgts625j134mwc_CloneID; uid=CC-31-CF-CB-3F-C2-CF-41; sid=E5-FD-06-B7-34-56-B4-9D-34-49-29-0B-C5-5C-06-A2-FC-6C-B3-33-43-D6-9D-A4-80-B7-5D-94-CC-8B-87-1B-B1-BF-19-7F-34-05-21-22; suid=CC-31-CF-CB-3F-C2-CF-41; hwsso_uniportal=Kt3mLwyWyfQvH_bhLGrp4ozo4WkH9D6nY81EqDfIXT8XliLjTvv9OIfnGR2tL0UsiSg2wcpMr4BfWYSUMmsd9Pf4CgJYIZygwVhf7isXdCrMMTTtakUbjDGjm_aoUvyCAaWai3ue4qsv5DYARv_bmR_a_aIdYV32RERM8KW9OIDbvcTy_afDOTtIlhGGBN9g9skqrg8vM0zPq1TOiw_aZTzLybi3muFt5CFJDyw3Lk7dBzw8gcKEHRWHBIbUqA7ckx5tMhFSz6PJxU55THagDZbVV9lw0BTtkrffbggOvfp0i2PeaflIB17LQb5tyFuk_aPkS_aJH5rH2c41rp6zfll4pbQ0V7A_c_c
+134255.110 P t3997 CookieUtils sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; logFlag=in; hwssotinter=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; hwssot=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; magot3=26522575653411; mcloudnkgbeta1magumag=00007O2LhtuAgAwOh4gIYoxqgl-:nkgts625j134mwc_CloneID; uid=CC-31-CF-CB-3F-C2-CF-41; sid=E5-FD-06-B7-34-56-B4-9D-34-49-29-0B-C5-5C-06-A2-FC-6C-B3-33-43-D6-9D-A4-80-B7-5D-94-CC-8B-87-1B-B1-BF-19-7F-34-05-21-22; suid=CC-31-CF-CB-3F-C2-CF-41; hwsso_uniportal=Kt3mLwyWyfQvH_bhLGrp4ozo4WkH9D6nY81EqDfIXT8XliLjTvv9OIfnGR2tL0UsiSg2wcpMr4BfWYSUMmsd9Pf4CgJYIZygwVhf7isXdCrMMTTtakUbjDGjm_aoUvyCAaWai3ue4qsv5DYARv_bmR_a_aIdYV32RERM8KW9OIDbvcTy_afDOTtIlhGGBN9g9skqrg8vM0zPq1TOiw_aZTzLybi3muFt5CFJDyw3Lk7dBzw8gcKEHRWHBIbUqA7ckx5tMhFSz6PJxU55THagDZbVV9lw0BTtkrffbggOvfp0i2PeaflIB17LQb5tyFuk_aPkS_aJH5rH2c41rp6zfll4pbQ0V7A_c_c
+134255.111 P t3997 Network sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; logFlag=in; hwssotinter=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; hwssot=84-D0-DE-5E-3D-9F-20-8B-BE-66-6A-B3-94-99-DC-E1; magot3=26522575653411; mcloudnkgbeta1magumag=00007O2LhtuAgAwOh4gIYoxqgl-:nkgts625j134mwc_CloneID; uid=CC-31-CF-CB-3F-C2-CF-41; sid=E5-FD-06-B7-34-56-B4-9D-34-49-29-0B-C5-5C-06-A2-FC-6C-B3-33-43-D6-9D-A4-80-B7-5D-94-CC-8B-87-1B-B1-BF-19-7F-34-05-21-22; suid=CC-31-CF-CB-3F-C2-CF-41; hwsso_uniportal=Kt3mLwyWyfQvH_bhLGrp4ozo4WkH9D6nY81EqDfIXT8XliLjTvv9OIfnGR2tL0UsiSg2wcpMr4BfWYSUMmsd9Pf4CgJYIZygwVhf7isXdCrMMTTtakUbjDGjm_aoUvyCAaWai3ue4qsv5DYARv_bmR_a_aIdYV32RERM8KW9OIDbvcTy_afDOTtIlhGGBN9g9skqrg8vM0zPq1TOiw_aZTzLybi3muFt5CFJDyw3Lk7dBzw8gcKEHRWHBIbUqA7ckx5tMhFSz6PJxU55THagDZbVV9lw0BTtkrffbggOvfp0i2PeaflIB17LQb5tyFuk_aPkS_aJH5rH2c41rp6zfll4pbQ0V7A_c_c
+134255.114 P t3997 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+134410.045 P t1 Login Login.login startTime:2019-05-08 13:44:10:039
+134410.049 P t1 Login Login.structHeaderForLogin
+134410.058 P t1 Login EncUtils.getDefPubKey:uat
+134410.066 P t1 Login EncUtils.getDefPubKey:uat
+134410.073 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+134410.082 P t1 Network traceId = 65bd5995-7cdf-4f9c-964d-a61544b70a0d, uuid = ac1f1c3a262b1e9d
+134410.432 P t4011 Network traceId = 65bd5995-7cdf-4f9c-964d-a61544b70a0d, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+134410.439 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+134410.442 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+134410.444 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+134410.447 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+134410.449 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+134410.451 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+134410.455 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+134410.459 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; hwssot=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; magot3=26522576077050; mcloudnkgbeta1magumag=0000956g_O2DgtGVq_fh53ttiu3:nkgts625j134mwc_CloneID; sid=B1-FC-A8-04-1F-85-2B-25-5C-75-D5-73-31-5F-0F-D7-3F-23-E6-29-44-C0-C1-0F-39-3F-C7-E1-60-E0-5C-76-33-07-7A-4D-27-DF-90-C5; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=pRVVmGCtKMdvtVeb1fhlzWKNsj7xChCUJW_az_aIFnhr5ZOuZ7EBlTjB_aQrXKn5z8pOLvVvcNd9dbCztNEFdDo_bhdLAmc1ijj_biNDtifqhK7LRckPvqZI8I07kbuTMA1JbqIrOencf5iauJQv7ZfmGlrSrsaLd3SSqyGJqMqA84xeRbeUoLlHtqZG46Gj_aFXMT0nd4K_aR7hqeSKGdwBYpscJxCtSSIztFbtwosgNoan3xr3ueU1FC2aRrAKY3E2ffQRfw6lrbZG9wSIws5N2iApqQg_beWhiSBlvj7YLPpN3_auqmYzISqtYKYzddVsLThZ2RtsAdeI7pILmlzWONfoaqg_c_c
+134410.463 P t1 Network traceId = 72d13c7e-978d-4f22-8b97-2590c696be10, uuid = ac1f1c3a262b1e9d
+134410.468 P t4011 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; hwssot=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; magot3=26522576077050; mcloudnkgbeta1magumag=0000956g_O2DgtGVq_fh53ttiu3:nkgts625j134mwc_CloneID; sid=B1-FC-A8-04-1F-85-2B-25-5C-75-D5-73-31-5F-0F-D7-3F-23-E6-29-44-C0-C1-0F-39-3F-C7-E1-60-E0-5C-76-33-07-7A-4D-27-DF-90-C5; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=pRVVmGCtKMdvtVeb1fhlzWKNsj7xChCUJW_az_aIFnhr5ZOuZ7EBlTjB_aQrXKn5z8pOLvVvcNd9dbCztNEFdDo_bhdLAmc1ijj_biNDtifqhK7LRckPvqZI8I07kbuTMA1JbqIrOencf5iauJQv7ZfmGlrSrsaLd3SSqyGJqMqA84xeRbeUoLlHtqZG46Gj_aFXMT0nd4K_aR7hqeSKGdwBYpscJxCtSSIztFbtwosgNoan3xr3ueU1FC2aRrAKY3E2ffQRfw6lrbZG9wSIws5N2iApqQg_beWhiSBlvj7YLPpN3_auqmYzISqtYKYzddVsLThZ2RtsAdeI7pILmlzWONfoaqg_c_c
+134410.471 P t4011 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; hwssot=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; magot3=26522576077050; mcloudnkgbeta1magumag=0000956g_O2DgtGVq_fh53ttiu3:nkgts625j134mwc_CloneID; sid=B1-FC-A8-04-1F-85-2B-25-5C-75-D5-73-31-5F-0F-D7-3F-23-E6-29-44-C0-C1-0F-39-3F-C7-E1-60-E0-5C-76-33-07-7A-4D-27-DF-90-C5; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=pRVVmGCtKMdvtVeb1fhlzWKNsj7xChCUJW_az_aIFnhr5ZOuZ7EBlTjB_aQrXKn5z8pOLvVvcNd9dbCztNEFdDo_bhdLAmc1ijj_biNDtifqhK7LRckPvqZI8I07kbuTMA1JbqIrOencf5iauJQv7ZfmGlrSrsaLd3SSqyGJqMqA84xeRbeUoLlHtqZG46Gj_aFXMT0nd4K_aR7hqeSKGdwBYpscJxCtSSIztFbtwosgNoan3xr3ueU1FC2aRrAKY3E2ffQRfw6lrbZG9wSIws5N2iApqQg_beWhiSBlvj7YLPpN3_auqmYzISqtYKYzddVsLThZ2RtsAdeI7pILmlzWONfoaqg_c_c
+134410.478 P t4011 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+134410.481 P t1 Login LoginTask endTime:2019-05-08 13:44:10:479
+134410.488 P t1 Login Login.login endTime:2019-05-08 13:44:10:485
+134410.497 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+134410.524 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; hwssot=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; magot3=26522576077050; mcloudnkgbeta1magumag=0000956g_O2DgtGVq_fh53ttiu3:nkgts625j134mwc_CloneID; sid=B1-FC-A8-04-1F-85-2B-25-5C-75-D5-73-31-5F-0F-D7-3F-23-E6-29-44-C0-C1-0F-39-3F-C7-E1-60-E0-5C-76-33-07-7A-4D-27-DF-90-C5; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=pRVVmGCtKMdvtVeb1fhlzWKNsj7xChCUJW_az_aIFnhr5ZOuZ7EBlTjB_aQrXKn5z8pOLvVvcNd9dbCztNEFdDo_bhdLAmc1ijj_biNDtifqhK7LRckPvqZI8I07kbuTMA1JbqIrOencf5iauJQv7ZfmGlrSrsaLd3SSqyGJqMqA84xeRbeUoLlHtqZG46Gj_aFXMT0nd4K_aR7hqeSKGdwBYpscJxCtSSIztFbtwosgNoan3xr3ueU1FC2aRrAKY3E2ffQRfw6lrbZG9wSIws5N2iApqQg_beWhiSBlvj7YLPpN3_auqmYzISqtYKYzddVsLThZ2RtsAdeI7pILmlzWONfoaqg_c_c
+134410.526 P t1 Network Network.get start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/sde_iot/test/all | {appVersion:1, cookie:logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; hwssot=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; magot3=26522576077050; mcloudnkgbeta1magumag=0000956g_O2DgtGVq_fh53ttiu3:nkgts625j134mwc_CloneID; sid=B1-FC-A8-04-1F-85-2B-25-5C-75-D5-73-31-5F-0F-D7-3F-23-E6-29-44-C0-C1-0F-39-3F-C7-E1-60-E0-5C-76-33-07-7A-4D-27-DF-90-C5; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=pRVVmGCtKMdvtVeb1fhlzWKNsj7xChCUJW_az_aIFnhr5ZOuZ7EBlTjB_aQrXKn5z8pOLvVvcNd9dbCztNEFdDo_bhdLAmc1ijj_biNDtifqhK7LRckPvqZI8I07kbuTMA1JbqIrOencf5iauJQv7ZfmGlrSrsaLd3SSqyGJqMqA84xeRbeUoLlHtqZG46Gj_aFXMT0nd4K_aR7hqeSKGdwBYpscJxCtSSIztFbtwosgNoan3xr3ueU1FC2aRrAKY3E2ffQRfw6lrbZG9wSIws5N2iApqQg_beWhiSBlvj7YLPpN3_auqmYzISqtYKYzddVsLThZ2RtsAdeI7pILmlzWONfoaqg_c_c, appName:sde_iot, osTarget:0, uuid:f7db247a6c644987b7f123f6c956f1a0, deviceName:HONOR V20}
+134410.528 P t1 Network traceId = e0c24bee-ba0e-4718-ba8f-8b921be3c55e, uuid = f7db247a6c644987b7f123f6c956f1a0
+134410.534 P t4011 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; hwssot=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; magot3=26522576077050; mcloudnkgbeta1magumag=0000956g_O2DgtGVq_fh53ttiu3:nkgts625j134mwc_CloneID; sid=B1-FC-A8-04-1F-85-2B-25-5C-75-D5-73-31-5F-0F-D7-3F-23-E6-29-44-C0-C1-0F-39-3F-C7-E1-60-E0-5C-76-33-07-7A-4D-27-DF-90-C5; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=pRVVmGCtKMdvtVeb1fhlzWKNsj7xChCUJW_az_aIFnhr5ZOuZ7EBlTjB_aQrXKn5z8pOLvVvcNd9dbCztNEFdDo_bhdLAmc1ijj_biNDtifqhK7LRckPvqZI8I07kbuTMA1JbqIrOencf5iauJQv7ZfmGlrSrsaLd3SSqyGJqMqA84xeRbeUoLlHtqZG46Gj_aFXMT0nd4K_aR7hqeSKGdwBYpscJxCtSSIztFbtwosgNoan3xr3ueU1FC2aRrAKY3E2ffQRfw6lrbZG9wSIws5N2iApqQg_beWhiSBlvj7YLPpN3_auqmYzISqtYKYzddVsLThZ2RtsAdeI7pILmlzWONfoaqg_c_c
+134410.539 P t4011 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; hwssot=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; magot3=26522576077050; mcloudnkgbeta1magumag=0000956g_O2DgtGVq_fh53ttiu3:nkgts625j134mwc_CloneID; sid=B1-FC-A8-04-1F-85-2B-25-5C-75-D5-73-31-5F-0F-D7-3F-23-E6-29-44-C0-C1-0F-39-3F-C7-E1-60-E0-5C-76-33-07-7A-4D-27-DF-90-C5; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=pRVVmGCtKMdvtVeb1fhlzWKNsj7xChCUJW_az_aIFnhr5ZOuZ7EBlTjB_aQrXKn5z8pOLvVvcNd9dbCztNEFdDo_bhdLAmc1ijj_biNDtifqhK7LRckPvqZI8I07kbuTMA1JbqIrOencf5iauJQv7ZfmGlrSrsaLd3SSqyGJqMqA84xeRbeUoLlHtqZG46Gj_aFXMT0nd4K_aR7hqeSKGdwBYpscJxCtSSIztFbtwosgNoan3xr3ueU1FC2aRrAKY3E2ffQRfw6lrbZG9wSIws5N2iApqQg_beWhiSBlvj7YLPpN3_auqmYzISqtYKYzddVsLThZ2RtsAdeI7pILmlzWONfoaqg_c_c
+134410.543 P t4011 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; hwssot=C9-51-1B-3A-17-FB-68-39-83-7B-3A-C1-B1-B8-24-0C; magot3=26522576077050; mcloudnkgbeta1magumag=0000956g_O2DgtGVq_fh53ttiu3:nkgts625j134mwc_CloneID; sid=B1-FC-A8-04-1F-85-2B-25-5C-75-D5-73-31-5F-0F-D7-3F-23-E6-29-44-C0-C1-0F-39-3F-C7-E1-60-E0-5C-76-33-07-7A-4D-27-DF-90-C5; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=pRVVmGCtKMdvtVeb1fhlzWKNsj7xChCUJW_az_aIFnhr5ZOuZ7EBlTjB_aQrXKn5z8pOLvVvcNd9dbCztNEFdDo_bhdLAmc1ijj_biNDtifqhK7LRckPvqZI8I07kbuTMA1JbqIrOencf5iauJQv7ZfmGlrSrsaLd3SSqyGJqMqA84xeRbeUoLlHtqZG46Gj_aFXMT0nd4K_aR7hqeSKGdwBYpscJxCtSSIztFbtwosgNoan3xr3ueU1FC2aRrAKY3E2ffQRfw6lrbZG9wSIws5N2iApqQg_beWhiSBlvj7YLPpN3_auqmYzISqtYKYzddVsLThZ2RtsAdeI7pILmlzWONfoaqg_c_c
+134410.553 P t4011 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+142413.698 P t1 Login Login.login startTime:2019-05-08 14:24:13:673
+142413.702 P t1 Login Login.structHeaderForLogin
+142413.713 P t1 Login EncUtils.getDefPubKey:uat
+142413.721 P t1 Login EncUtils.getDefPubKey:uat
+142413.732 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+142413.777 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:131)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+142413.797 P t1 Network traceId = a9a350b2-ff76-41a3-b071-b2674c7b0c86, uuid = ac1f1c3a262b1e9d
+142414.573 P t4197 Network traceId = a9a350b2-ff76-41a3-b071-b2674c7b0c86, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+142414.600 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+142414.609 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+142414.615 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+142414.620 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+142414.627 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+142414.630 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+142414.651 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+142414.658 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=30-4E-68-B1-63-AC-A3-73-3D-2D-33-75-A0-E8-79-8E; hwssot=30-4E-68-B1-63-AC-A3-73-AC-57-0D-A0-89-7D-C6-96; magot3=26522607225427; mcloudnkgbeta1magumag=0000vRNTFAsauq33rz6JoYCHjMF:nkgts625j134mwc_CloneID; sid=A1-85-CF-AA-77-67-81-59-27-26-F5-1F-FD-80-7D-5B-09-7B-D5-BB-45-13-DF-8B-C3-8B-B6-EC-AA-A9-B1-AD-71-A7-E5-9D-46-D3-D3-87; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=IWd8veSt7Zora2Rtkc1E6NhjPa5RPQhnwsvQepq0dPoSy_bIisqf2N5O2JA4aQO5GDFqSk3mANFAQlren7N4_axnZCSM45lvN1IYMPD9AxKpWPDpOyvbiy_b_bKBX2fDw_apDZMpEahXwyhvM5LGvbdIJbBq_aPak02_abXux5NL2eyNAcIW43G3X2GwqfZraDqm6mh89N0AOukzTH0ZsOHrZhV2B1fe9_bcCJi6h05YgZK8TvdVJIY8mum3aWtBcrlSJKDUtfuy_azZ5MyiTW9ysuTvTxkQo_aRjqyL49AOQ2W8Ybt1NlOKdbo7gx6zZD6Mhl9P0_bwFgf9Cu1kygaSh4mxqBuTg_c_c
+142414.662 P t1 Network traceId = c60028ac-c0db-4b13-a4eb-c71c973c16ae, uuid = ac1f1c3a262b1e9d
+142414.668 P t4197 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=30-4E-68-B1-63-AC-A3-73-3D-2D-33-75-A0-E8-79-8E; hwssot=30-4E-68-B1-63-AC-A3-73-AC-57-0D-A0-89-7D-C6-96; magot3=26522607225427; mcloudnkgbeta1magumag=0000vRNTFAsauq33rz6JoYCHjMF:nkgts625j134mwc_CloneID; sid=A1-85-CF-AA-77-67-81-59-27-26-F5-1F-FD-80-7D-5B-09-7B-D5-BB-45-13-DF-8B-C3-8B-B6-EC-AA-A9-B1-AD-71-A7-E5-9D-46-D3-D3-87; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=IWd8veSt7Zora2Rtkc1E6NhjPa5RPQhnwsvQepq0dPoSy_bIisqf2N5O2JA4aQO5GDFqSk3mANFAQlren7N4_axnZCSM45lvN1IYMPD9AxKpWPDpOyvbiy_b_bKBX2fDw_apDZMpEahXwyhvM5LGvbdIJbBq_aPak02_abXux5NL2eyNAcIW43G3X2GwqfZraDqm6mh89N0AOukzTH0ZsOHrZhV2B1fe9_bcCJi6h05YgZK8TvdVJIY8mum3aWtBcrlSJKDUtfuy_azZ5MyiTW9ysuTvTxkQo_aRjqyL49AOQ2W8Ybt1NlOKdbo7gx6zZD6Mhl9P0_bwFgf9Cu1kygaSh4mxqBuTg_c_c
+142414.673 P t4197 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=30-4E-68-B1-63-AC-A3-73-3D-2D-33-75-A0-E8-79-8E; hwssot=30-4E-68-B1-63-AC-A3-73-AC-57-0D-A0-89-7D-C6-96; magot3=26522607225427; mcloudnkgbeta1magumag=0000vRNTFAsauq33rz6JoYCHjMF:nkgts625j134mwc_CloneID; sid=A1-85-CF-AA-77-67-81-59-27-26-F5-1F-FD-80-7D-5B-09-7B-D5-BB-45-13-DF-8B-C3-8B-B6-EC-AA-A9-B1-AD-71-A7-E5-9D-46-D3-D3-87; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=IWd8veSt7Zora2Rtkc1E6NhjPa5RPQhnwsvQepq0dPoSy_bIisqf2N5O2JA4aQO5GDFqSk3mANFAQlren7N4_axnZCSM45lvN1IYMPD9AxKpWPDpOyvbiy_b_bKBX2fDw_apDZMpEahXwyhvM5LGvbdIJbBq_aPak02_abXux5NL2eyNAcIW43G3X2GwqfZraDqm6mh89N0AOukzTH0ZsOHrZhV2B1fe9_bcCJi6h05YgZK8TvdVJIY8mum3aWtBcrlSJKDUtfuy_azZ5MyiTW9ysuTvTxkQo_aRjqyL49AOQ2W8Ybt1NlOKdbo7gx6zZD6Mhl9P0_bwFgf9Cu1kygaSh4mxqBuTg_c_c
+142414.680 P t4197 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+142414.688 P t1 Login LoginTask endTime:2019-05-08 14:24:14:686
+142414.691 P t1 Login you does not compile lark-mdm.jar
+142414.693 P t1 Login use X86Storage
+142414.702 P t1 Login Login.login endTime:2019-05-08 14:24:14:699
+142414.704 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+142414.762 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=30-4E-68-B1-63-AC-A3-73-3D-2D-33-75-A0-E8-79-8E; hwssot=30-4E-68-B1-63-AC-A3-73-AC-57-0D-A0-89-7D-C6-96; magot3=26522607225427; mcloudnkgbeta1magumag=0000vRNTFAsauq33rz6JoYCHjMF:nkgts625j134mwc_CloneID; sid=A1-85-CF-AA-77-67-81-59-27-26-F5-1F-FD-80-7D-5B-09-7B-D5-BB-45-13-DF-8B-C3-8B-B6-EC-AA-A9-B1-AD-71-A7-E5-9D-46-D3-D3-87; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=IWd8veSt7Zora2Rtkc1E6NhjPa5RPQhnwsvQepq0dPoSy_bIisqf2N5O2JA4aQO5GDFqSk3mANFAQlren7N4_axnZCSM45lvN1IYMPD9AxKpWPDpOyvbiy_b_bKBX2fDw_apDZMpEahXwyhvM5LGvbdIJbBq_aPak02_abXux5NL2eyNAcIW43G3X2GwqfZraDqm6mh89N0AOukzTH0ZsOHrZhV2B1fe9_bcCJi6h05YgZK8TvdVJIY8mum3aWtBcrlSJKDUtfuy_azZ5MyiTW9ysuTvTxkQo_aRjqyL49AOQ2W8Ybt1NlOKdbo7gx6zZD6Mhl9P0_bwFgf9Cu1kygaSh4mxqBuTg_c_c
+142414.764 P t1 Network Network.get start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/sde_iot/test/all | null
+142414.767 P t1 Network traceId = c7a5eb8b-c222-4c37-a70e-85fb606fd975, uuid = ac1f1c3a262b1e9d
+142414.772 P t4197 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=30-4E-68-B1-63-AC-A3-73-3D-2D-33-75-A0-E8-79-8E; hwssot=30-4E-68-B1-63-AC-A3-73-AC-57-0D-A0-89-7D-C6-96; magot3=26522607225427; mcloudnkgbeta1magumag=0000vRNTFAsauq33rz6JoYCHjMF:nkgts625j134mwc_CloneID; sid=A1-85-CF-AA-77-67-81-59-27-26-F5-1F-FD-80-7D-5B-09-7B-D5-BB-45-13-DF-8B-C3-8B-B6-EC-AA-A9-B1-AD-71-A7-E5-9D-46-D3-D3-87; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=IWd8veSt7Zora2Rtkc1E6NhjPa5RPQhnwsvQepq0dPoSy_bIisqf2N5O2JA4aQO5GDFqSk3mANFAQlren7N4_axnZCSM45lvN1IYMPD9AxKpWPDpOyvbiy_b_bKBX2fDw_apDZMpEahXwyhvM5LGvbdIJbBq_aPak02_abXux5NL2eyNAcIW43G3X2GwqfZraDqm6mh89N0AOukzTH0ZsOHrZhV2B1fe9_bcCJi6h05YgZK8TvdVJIY8mum3aWtBcrlSJKDUtfuy_azZ5MyiTW9ysuTvTxkQo_aRjqyL49AOQ2W8Ybt1NlOKdbo7gx6zZD6Mhl9P0_bwFgf9Cu1kygaSh4mxqBuTg_c_c
+142414.776 P t4197 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=30-4E-68-B1-63-AC-A3-73-3D-2D-33-75-A0-E8-79-8E; hwssot=30-4E-68-B1-63-AC-A3-73-AC-57-0D-A0-89-7D-C6-96; magot3=26522607225427; mcloudnkgbeta1magumag=0000vRNTFAsauq33rz6JoYCHjMF:nkgts625j134mwc_CloneID; sid=A1-85-CF-AA-77-67-81-59-27-26-F5-1F-FD-80-7D-5B-09-7B-D5-BB-45-13-DF-8B-C3-8B-B6-EC-AA-A9-B1-AD-71-A7-E5-9D-46-D3-D3-87; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=IWd8veSt7Zora2Rtkc1E6NhjPa5RPQhnwsvQepq0dPoSy_bIisqf2N5O2JA4aQO5GDFqSk3mANFAQlren7N4_axnZCSM45lvN1IYMPD9AxKpWPDpOyvbiy_b_bKBX2fDw_apDZMpEahXwyhvM5LGvbdIJbBq_aPak02_abXux5NL2eyNAcIW43G3X2GwqfZraDqm6mh89N0AOukzTH0ZsOHrZhV2B1fe9_bcCJi6h05YgZK8TvdVJIY8mum3aWtBcrlSJKDUtfuy_azZ5MyiTW9ysuTvTxkQo_aRjqyL49AOQ2W8Ybt1NlOKdbo7gx6zZD6Mhl9P0_bwFgf9Cu1kygaSh4mxqBuTg_c_c
+142414.778 P t4197 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=30-4E-68-B1-63-AC-A3-73-3D-2D-33-75-A0-E8-79-8E; hwssot=30-4E-68-B1-63-AC-A3-73-AC-57-0D-A0-89-7D-C6-96; magot3=26522607225427; mcloudnkgbeta1magumag=0000vRNTFAsauq33rz6JoYCHjMF:nkgts625j134mwc_CloneID; sid=A1-85-CF-AA-77-67-81-59-27-26-F5-1F-FD-80-7D-5B-09-7B-D5-BB-45-13-DF-8B-C3-8B-B6-EC-AA-A9-B1-AD-71-A7-E5-9D-46-D3-D3-87; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=IWd8veSt7Zora2Rtkc1E6NhjPa5RPQhnwsvQepq0dPoSy_bIisqf2N5O2JA4aQO5GDFqSk3mANFAQlren7N4_axnZCSM45lvN1IYMPD9AxKpWPDpOyvbiy_b_bKBX2fDw_apDZMpEahXwyhvM5LGvbdIJbBq_aPak02_abXux5NL2eyNAcIW43G3X2GwqfZraDqm6mh89N0AOukzTH0ZsOHrZhV2B1fe9_bcCJi6h05YgZK8TvdVJIY8mum3aWtBcrlSJKDUtfuy_azZ5MyiTW9ysuTvTxkQo_aRjqyL49AOQ2W8Ybt1NlOKdbo7gx6zZD6Mhl9P0_bwFgf9Cu1kygaSh4mxqBuTg_c_c
+142414.784 P t4197 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+142519.804 P t1 Login Login.login startTime:2019-05-08 14:25:19:787
+142519.807 P t1 Login Login.structHeaderForLogin
+142519.815 P t1 Login EncUtils.getDefPubKey:uat
+142519.822 P t1 Login EncUtils.getDefPubKey:uat
+142519.829 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+142519.870 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:131)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+142519.881 P t1 Network traceId = 142603c5-b799-444d-8a9f-f12f3b420544, uuid = ac1f1c3a262b1e9d
+142520.545 P t4209 Network traceId = 142603c5-b799-444d-8a9f-f12f3b420544, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+142520.570 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+142520.581 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+142520.587 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+142520.591 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+142520.595 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+142520.598 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+142520.622 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+142520.629 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; hwssot=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; magot3=26522607426413; mcloudnkgbeta1magumag=0000dCcAaqWlGUj2jO8PMElfb3D:nkgts625j134mwc_CloneID; sid=B9-DF-A9-4F-FA-2B-9D-0E-FF-2F-D3-D2-D2-1C-8F-16-9E-33-9A-14-07-01-B5-67-77-03-C4-B7-1C-3C-76-54-C1-A8-3F-D9-3A-2B-B7-ED; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=G_abj_bpNRm9VqZxbfTBuBjet4wy9I_ajFqdIT9mXWimpgoeLHIcx21wPH3poPIg3bHXoAOvqGwzELGZFg5mVc8TaOjh8eFYoHRSaUp_a8HFGcl9_bai8U_bIjPqNjpRw8pfHwtJQpRK8JoJU8qYj43ViWKHoYSwBrnVdW4jDZhVwwBATiOPwXRC_bRlhDC04T5_buLniMBtHXH0_a_bUYxiHwhSBMb6ml7LUpjrnUGh5gcBpLbKuQNUCVzb33czL7m8IMDc7YAEo_b7SXJPJmWSfLoKZgAlnhEd2TlyxEWw5gOadBFRYw1fkJpMhX3kXeVBk_aSelhSAFpIn9wpa8b5M8TK6sHZkA_c_c
+142520.634 P t1 Network traceId = 62d8b663-0999-4168-8715-279940a9d138, uuid = ac1f1c3a262b1e9d
+142520.638 P t4209 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; hwssot=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; magot3=26522607426413; mcloudnkgbeta1magumag=0000dCcAaqWlGUj2jO8PMElfb3D:nkgts625j134mwc_CloneID; sid=B9-DF-A9-4F-FA-2B-9D-0E-FF-2F-D3-D2-D2-1C-8F-16-9E-33-9A-14-07-01-B5-67-77-03-C4-B7-1C-3C-76-54-C1-A8-3F-D9-3A-2B-B7-ED; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=G_abj_bpNRm9VqZxbfTBuBjet4wy9I_ajFqdIT9mXWimpgoeLHIcx21wPH3poPIg3bHXoAOvqGwzELGZFg5mVc8TaOjh8eFYoHRSaUp_a8HFGcl9_bai8U_bIjPqNjpRw8pfHwtJQpRK8JoJU8qYj43ViWKHoYSwBrnVdW4jDZhVwwBATiOPwXRC_bRlhDC04T5_buLniMBtHXH0_a_bUYxiHwhSBMb6ml7LUpjrnUGh5gcBpLbKuQNUCVzb33czL7m8IMDc7YAEo_b7SXJPJmWSfLoKZgAlnhEd2TlyxEWw5gOadBFRYw1fkJpMhX3kXeVBk_aSelhSAFpIn9wpa8b5M8TK6sHZkA_c_c
+142520.640 P t4209 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; hwssot=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; magot3=26522607426413; mcloudnkgbeta1magumag=0000dCcAaqWlGUj2jO8PMElfb3D:nkgts625j134mwc_CloneID; sid=B9-DF-A9-4F-FA-2B-9D-0E-FF-2F-D3-D2-D2-1C-8F-16-9E-33-9A-14-07-01-B5-67-77-03-C4-B7-1C-3C-76-54-C1-A8-3F-D9-3A-2B-B7-ED; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=G_abj_bpNRm9VqZxbfTBuBjet4wy9I_ajFqdIT9mXWimpgoeLHIcx21wPH3poPIg3bHXoAOvqGwzELGZFg5mVc8TaOjh8eFYoHRSaUp_a8HFGcl9_bai8U_bIjPqNjpRw8pfHwtJQpRK8JoJU8qYj43ViWKHoYSwBrnVdW4jDZhVwwBATiOPwXRC_bRlhDC04T5_buLniMBtHXH0_a_bUYxiHwhSBMb6ml7LUpjrnUGh5gcBpLbKuQNUCVzb33czL7m8IMDc7YAEo_b7SXJPJmWSfLoKZgAlnhEd2TlyxEWw5gOadBFRYw1fkJpMhX3kXeVBk_aSelhSAFpIn9wpa8b5M8TK6sHZkA_c_c
+142520.646 P t4209 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+142520.660 P t1 Login LoginTask endTime:2019-05-08 14:25:20:658
+142520.661 P t1 Login you does not compile lark-mdm.jar
+142520.662 P t1 Login use X86Storage
+142520.670 P t1 Login Login.login endTime:2019-05-08 14:25:20:668
+142520.670 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+142520.727 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; hwssot=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; magot3=26522607426413; mcloudnkgbeta1magumag=0000dCcAaqWlGUj2jO8PMElfb3D:nkgts625j134mwc_CloneID; sid=B9-DF-A9-4F-FA-2B-9D-0E-FF-2F-D3-D2-D2-1C-8F-16-9E-33-9A-14-07-01-B5-67-77-03-C4-B7-1C-3C-76-54-C1-A8-3F-D9-3A-2B-B7-ED; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=G_abj_bpNRm9VqZxbfTBuBjet4wy9I_ajFqdIT9mXWimpgoeLHIcx21wPH3poPIg3bHXoAOvqGwzELGZFg5mVc8TaOjh8eFYoHRSaUp_a8HFGcl9_bai8U_bIjPqNjpRw8pfHwtJQpRK8JoJU8qYj43ViWKHoYSwBrnVdW4jDZhVwwBATiOPwXRC_bRlhDC04T5_buLniMBtHXH0_a_bUYxiHwhSBMb6ml7LUpjrnUGh5gcBpLbKuQNUCVzb33czL7m8IMDc7YAEo_b7SXJPJmWSfLoKZgAlnhEd2TlyxEWw5gOadBFRYw1fkJpMhX3kXeVBk_aSelhSAFpIn9wpa8b5M8TK6sHZkA_c_c
+142520.729 P t1 Network Network.get start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/sde_iot/test/all | null
+142520.730 P t1 Network traceId = e379d102-5531-41ab-8d38-fe9eaba5e5c4, uuid = ac1f1c3a262b1e9d
+142520.734 P t4209 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; hwssot=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; magot3=26522607426413; mcloudnkgbeta1magumag=0000dCcAaqWlGUj2jO8PMElfb3D:nkgts625j134mwc_CloneID; sid=B9-DF-A9-4F-FA-2B-9D-0E-FF-2F-D3-D2-D2-1C-8F-16-9E-33-9A-14-07-01-B5-67-77-03-C4-B7-1C-3C-76-54-C1-A8-3F-D9-3A-2B-B7-ED; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=G_abj_bpNRm9VqZxbfTBuBjet4wy9I_ajFqdIT9mXWimpgoeLHIcx21wPH3poPIg3bHXoAOvqGwzELGZFg5mVc8TaOjh8eFYoHRSaUp_a8HFGcl9_bai8U_bIjPqNjpRw8pfHwtJQpRK8JoJU8qYj43ViWKHoYSwBrnVdW4jDZhVwwBATiOPwXRC_bRlhDC04T5_buLniMBtHXH0_a_bUYxiHwhSBMb6ml7LUpjrnUGh5gcBpLbKuQNUCVzb33czL7m8IMDc7YAEo_b7SXJPJmWSfLoKZgAlnhEd2TlyxEWw5gOadBFRYw1fkJpMhX3kXeVBk_aSelhSAFpIn9wpa8b5M8TK6sHZkA_c_c
+142520.737 P t4209 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; hwssot=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; magot3=26522607426413; mcloudnkgbeta1magumag=0000dCcAaqWlGUj2jO8PMElfb3D:nkgts625j134mwc_CloneID; sid=B9-DF-A9-4F-FA-2B-9D-0E-FF-2F-D3-D2-D2-1C-8F-16-9E-33-9A-14-07-01-B5-67-77-03-C4-B7-1C-3C-76-54-C1-A8-3F-D9-3A-2B-B7-ED; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=G_abj_bpNRm9VqZxbfTBuBjet4wy9I_ajFqdIT9mXWimpgoeLHIcx21wPH3poPIg3bHXoAOvqGwzELGZFg5mVc8TaOjh8eFYoHRSaUp_a8HFGcl9_bai8U_bIjPqNjpRw8pfHwtJQpRK8JoJU8qYj43ViWKHoYSwBrnVdW4jDZhVwwBATiOPwXRC_bRlhDC04T5_buLniMBtHXH0_a_bUYxiHwhSBMb6ml7LUpjrnUGh5gcBpLbKuQNUCVzb33czL7m8IMDc7YAEo_b7SXJPJmWSfLoKZgAlnhEd2TlyxEWw5gOadBFRYw1fkJpMhX3kXeVBk_aSelhSAFpIn9wpa8b5M8TK6sHZkA_c_c
+142520.738 P t4209 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; hwssot=87-B7-4F-8A-DC-73-40-92-0E-A3-66-81-61-81-09-FF; magot3=26522607426413; mcloudnkgbeta1magumag=0000dCcAaqWlGUj2jO8PMElfb3D:nkgts625j134mwc_CloneID; sid=B9-DF-A9-4F-FA-2B-9D-0E-FF-2F-D3-D2-D2-1C-8F-16-9E-33-9A-14-07-01-B5-67-77-03-C4-B7-1C-3C-76-54-C1-A8-3F-D9-3A-2B-B7-ED; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=G_abj_bpNRm9VqZxbfTBuBjet4wy9I_ajFqdIT9mXWimpgoeLHIcx21wPH3poPIg3bHXoAOvqGwzELGZFg5mVc8TaOjh8eFYoHRSaUp_a8HFGcl9_bai8U_bIjPqNjpRw8pfHwtJQpRK8JoJU8qYj43ViWKHoYSwBrnVdW4jDZhVwwBATiOPwXRC_bRlhDC04T5_buLniMBtHXH0_a_bUYxiHwhSBMb6ml7LUpjrnUGh5gcBpLbKuQNUCVzb33czL7m8IMDc7YAEo_b7SXJPJmWSfLoKZgAlnhEd2TlyxEWw5gOadBFRYw1fkJpMhX3kXeVBk_aSelhSAFpIn9wpa8b5M8TK6sHZkA_c_c
+142520.744 P t4209 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144331.860 P t1 Login Login.login startTime:2019-05-08 14:43:31:841
+144331.863 P t1 Login Login.structHeaderForLogin
+144331.870 P t1 Login EncUtils.getDefPubKey:uat
+144331.877 P t1 Login EncUtils.getDefPubKey:uat
+144331.884 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+144331.933 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:131)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+144331.948 P t1 Network traceId = 53201284-e441-4d29-b4fe-3f10d596b853, uuid = ac1f1c3a262b1e9d
+144332.782 P t4265 Network traceId = 53201284-e441-4d29-b4fe-3f10d596b853, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+144332.807 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+144332.815 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+144332.819 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+144332.822 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+144332.825 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+144332.827 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+144332.843 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+144332.848 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=9E-2B-CB-F3-4D-42-FA-35-36-97-88-67-C5-98-C2-48; hwssot=9E-2B-CB-F3-4D-42-FA-35-36-97-88-67-C5-98-C2-48; magot3=26522613553472; mcloudnkgbeta1magumag=0000zVSDT4g9k86e4t0IeGzhqYL:nkgts625j134mwc_CloneID; sid=A4-85-BB-89-DB-8D-B2-19-60-E2-31-6D-66-E3-6B-47-0B-8D-DB-73-04-69-78-34-F3-08-1C-5C-02-EC-74-95-3A-97-7A-49-98-F7-A5-FE; hwsso_uniportal=dSZLD2nxrdVhLNsdu2NNQDXT4_bBqkpSu9A9EI5l2RdTATnbS8kf_aWXpiLiwerndxAXRTYyvRZFQw0TC5y65QRsc7qHea9QlRR1bS6yzWFB23BCDxgPzfZssjyXEdThUPayuA3LWPZo4YQHzRSdSvUmCt_bfkJAP3xKZjO0aYi2VlAOR6WLNcMzpa9Z3ZUnGmYVzydlMlgorNtI_bfwJ_a6RHfQXlFIJ4a61jTyS1pzRPHuJzn57PlJjkn_bFNPDltnZwRY_ai_bVarlYgIKEFwfgThPDx8fz_aWyIyaXKIxdRZ0DNFBkWY7HQu9Apy68RKdaOk5WEW8_b7n3vZ7U_bF1Ir_anhMw_c_c
+144332.851 P t1 Network traceId = b3aa54a5-3855-4d9c-907e-ed69ce18bc25, uuid = ac1f1c3a262b1e9d
+144332.855 P t4265 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=9E-2B-CB-F3-4D-42-FA-35-36-97-88-67-C5-98-C2-48; hwssot=9E-2B-CB-F3-4D-42-FA-35-36-97-88-67-C5-98-C2-48; magot3=26522613553472; mcloudnkgbeta1magumag=0000zVSDT4g9k86e4t0IeGzhqYL:nkgts625j134mwc_CloneID; sid=A4-85-BB-89-DB-8D-B2-19-60-E2-31-6D-66-E3-6B-47-0B-8D-DB-73-04-69-78-34-F3-08-1C-5C-02-EC-74-95-3A-97-7A-49-98-F7-A5-FE; hwsso_uniportal=dSZLD2nxrdVhLNsdu2NNQDXT4_bBqkpSu9A9EI5l2RdTATnbS8kf_aWXpiLiwerndxAXRTYyvRZFQw0TC5y65QRsc7qHea9QlRR1bS6yzWFB23BCDxgPzfZssjyXEdThUPayuA3LWPZo4YQHzRSdSvUmCt_bfkJAP3xKZjO0aYi2VlAOR6WLNcMzpa9Z3ZUnGmYVzydlMlgorNtI_bfwJ_a6RHfQXlFIJ4a61jTyS1pzRPHuJzn57PlJjkn_bFNPDltnZwRY_ai_bVarlYgIKEFwfgThPDx8fz_aWyIyaXKIxdRZ0DNFBkWY7HQu9Apy68RKdaOk5WEW8_b7n3vZ7U_bF1Ir_anhMw_c_c
+144332.856 P t4265 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=9E-2B-CB-F3-4D-42-FA-35-36-97-88-67-C5-98-C2-48; hwssot=9E-2B-CB-F3-4D-42-FA-35-36-97-88-67-C5-98-C2-48; magot3=26522613553472; mcloudnkgbeta1magumag=0000zVSDT4g9k86e4t0IeGzhqYL:nkgts625j134mwc_CloneID; sid=A4-85-BB-89-DB-8D-B2-19-60-E2-31-6D-66-E3-6B-47-0B-8D-DB-73-04-69-78-34-F3-08-1C-5C-02-EC-74-95-3A-97-7A-49-98-F7-A5-FE; hwsso_uniportal=dSZLD2nxrdVhLNsdu2NNQDXT4_bBqkpSu9A9EI5l2RdTATnbS8kf_aWXpiLiwerndxAXRTYyvRZFQw0TC5y65QRsc7qHea9QlRR1bS6yzWFB23BCDxgPzfZssjyXEdThUPayuA3LWPZo4YQHzRSdSvUmCt_bfkJAP3xKZjO0aYi2VlAOR6WLNcMzpa9Z3ZUnGmYVzydlMlgorNtI_bfwJ_a6RHfQXlFIJ4a61jTyS1pzRPHuJzn57PlJjkn_bFNPDltnZwRY_ai_bVarlYgIKEFwfgThPDx8fz_aWyIyaXKIxdRZ0DNFBkWY7HQu9Apy68RKdaOk5WEW8_b7n3vZ7U_bF1Ir_anhMw_c_c
+144332.860 P t4265 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144332.872 P t1 Login LoginTask endTime:2019-05-08 14:43:32:871
+144332.874 P t1 Login you does not compile lark-mdm.jar
+144332.875 P t1 Login use X86Storage
+144332.882 P t1 Login Login.login endTime:2019-05-08 14:43:32:880
+144332.883 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144332.932 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=9E-2B-CB-F3-4D-42-FA-35-36-97-88-67-C5-98-C2-48; hwssot=9E-2B-CB-F3-4D-42-FA-35-36-97-88-67-C5-98-C2-48; magot3=26522613553472; mcloudnkgbeta1magumag=0000zVSDT4g9k86e4t0IeGzhqYL:nkgts625j134mwc_CloneID; sid=A4-85-BB-89-DB-8D-B2-19-60-E2-31-6D-66-E3-6B-47-0B-8D-DB-73-04-69-78-34-F3-08-1C-5C-02-EC-74-95-3A-97-7A-49-98-F7-A5-FE; hwsso_uniportal=dSZLD2nxrdVhLNsdu2NNQDXT4_bBqkpSu9A9EI5l2RdTATnbS8kf_aWXpiLiwerndxAXRTYyvRZFQw0TC5y65QRsc7qHea9QlRR1bS6yzWFB23BCDxgPzfZssjyXEdThUPayuA3LWPZo4YQHzRSdSvUmCt_bfkJAP3xKZjO0aYi2VlAOR6WLNcMzpa9Z3ZUnGmYVzydlMlgorNtI_bfwJ_a6RHfQXlFIJ4a61jTyS1pzRPHuJzn57PlJjkn_bFNPDltnZwRY_ai_bVarlYgIKEFwfgThPDx8fz_aWyIyaXKIxdRZ0DNFBkWY7HQu9Apy68RKdaOk5WEW8_b7n3vZ7U_bF1Ir_anhMw_c_c
+144431.171 P t1 Login Login.login startTime:2019-05-08 14:44:31:156
+144431.173 P t1 Login Login.structHeaderForLogin
+144431.180 P t1 Login EncUtils.getDefPubKey:uat
+144431.186 P t1 Login EncUtils.getDefPubKey:uat
+144431.193 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+144431.248 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:131)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+144431.259 P t1 Network traceId = a210dff1-662f-482e-9b61-b42ef66e147a, uuid = ac1f1c3a262b1e9d
+144431.880 P t4273 Network traceId = a210dff1-662f-482e-9b61-b42ef66e147a, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+144431.901 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+144431.905 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+144431.907 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+144431.908 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+144431.909 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+144431.910 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+144431.926 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+144431.930 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=9E-2B-CB-F3-4D-42-FA-35-9D-6A-B7-50-15-ED-DB-50; hwssot=9E-2B-CB-F3-4D-42-FA-35-9D-6A-B7-50-15-ED-DB-50; magot3=26522613737266; mcloudnkgbeta1magumag=0000CvnVJgvILKKB8kVZSJL7tse:nkgts625j134mwc_CloneID; sid=E9-CD-7F-70-F1-5F-70-D8-60-9F-39-66-3E-51-75-2C-AD-D1-14-31-89-4C-87-93-4D-61-B7-2F-1C-03-E7-CD-A5-91-ED-49-BA-A0-F2-91; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=PJ97XDwRAclxvbX2uLJmC9ATIAms5554Wm9wp4Ikx6JWFFiWkLT2CiDeStW6pAI_aC7Rd3syEWue4XdQtvNzjslf1CNmB8agq58JJv_aKipUn7r8fLrgReJUKmKQRJH8dPRSqAaNjYNdKp0t8j_a0HfXpV_abaagKhVKuV2dYNfvYipuCHSbeDuvya_bY87gEnejvqqtmZ5OfpuCRFEdjtL3NDOZXZy0gjrhazfojxqp_bE4tARLpUEVujHb6R_bLAOpwbzCj1oqB3ae2m6O_bHQ14Ig_bDi_aiacF2evjGVXMwvmzG6fZX56c4_bA7hrV9OaFnFzSRGj5I79wx9ZtvL3iyDzsujw_c_c
+144431.933 P t1 Network traceId = a18466c0-4304-44e1-aee2-f13ce8e87171, uuid = ac1f1c3a262b1e9d
+144431.936 P t4273 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=9E-2B-CB-F3-4D-42-FA-35-9D-6A-B7-50-15-ED-DB-50; hwssot=9E-2B-CB-F3-4D-42-FA-35-9D-6A-B7-50-15-ED-DB-50; magot3=26522613737266; mcloudnkgbeta1magumag=0000CvnVJgvILKKB8kVZSJL7tse:nkgts625j134mwc_CloneID; sid=E9-CD-7F-70-F1-5F-70-D8-60-9F-39-66-3E-51-75-2C-AD-D1-14-31-89-4C-87-93-4D-61-B7-2F-1C-03-E7-CD-A5-91-ED-49-BA-A0-F2-91; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=PJ97XDwRAclxvbX2uLJmC9ATIAms5554Wm9wp4Ikx6JWFFiWkLT2CiDeStW6pAI_aC7Rd3syEWue4XdQtvNzjslf1CNmB8agq58JJv_aKipUn7r8fLrgReJUKmKQRJH8dPRSqAaNjYNdKp0t8j_a0HfXpV_abaagKhVKuV2dYNfvYipuCHSbeDuvya_bY87gEnejvqqtmZ5OfpuCRFEdjtL3NDOZXZy0gjrhazfojxqp_bE4tARLpUEVujHb6R_bLAOpwbzCj1oqB3ae2m6O_bHQ14Ig_bDi_aiacF2evjGVXMwvmzG6fZX56c4_bA7hrV9OaFnFzSRGj5I79wx9ZtvL3iyDzsujw_c_c
+144431.936 P t4273 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=9E-2B-CB-F3-4D-42-FA-35-9D-6A-B7-50-15-ED-DB-50; hwssot=9E-2B-CB-F3-4D-42-FA-35-9D-6A-B7-50-15-ED-DB-50; magot3=26522613737266; mcloudnkgbeta1magumag=0000CvnVJgvILKKB8kVZSJL7tse:nkgts625j134mwc_CloneID; sid=E9-CD-7F-70-F1-5F-70-D8-60-9F-39-66-3E-51-75-2C-AD-D1-14-31-89-4C-87-93-4D-61-B7-2F-1C-03-E7-CD-A5-91-ED-49-BA-A0-F2-91; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=PJ97XDwRAclxvbX2uLJmC9ATIAms5554Wm9wp4Ikx6JWFFiWkLT2CiDeStW6pAI_aC7Rd3syEWue4XdQtvNzjslf1CNmB8agq58JJv_aKipUn7r8fLrgReJUKmKQRJH8dPRSqAaNjYNdKp0t8j_a0HfXpV_abaagKhVKuV2dYNfvYipuCHSbeDuvya_bY87gEnejvqqtmZ5OfpuCRFEdjtL3NDOZXZy0gjrhazfojxqp_bE4tARLpUEVujHb6R_bLAOpwbzCj1oqB3ae2m6O_bHQ14Ig_bDi_aiacF2evjGVXMwvmzG6fZX56c4_bA7hrV9OaFnFzSRGj5I79wx9ZtvL3iyDzsujw_c_c
+144431.941 P t4273 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144431.952 P t1 Login LoginTask endTime:2019-05-08 14:44:31:951
+144431.954 P t1 Login you does not compile lark-mdm.jar
+144431.955 P t1 Login use X86Storage
+144431.962 P t1 Login Login.login endTime:2019-05-08 14:44:31:960
+144431.963 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144432.020 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=9E-2B-CB-F3-4D-42-FA-35-9D-6A-B7-50-15-ED-DB-50; hwssot=9E-2B-CB-F3-4D-42-FA-35-9D-6A-B7-50-15-ED-DB-50; magot3=26522613737266; mcloudnkgbeta1magumag=0000CvnVJgvILKKB8kVZSJL7tse:nkgts625j134mwc_CloneID; sid=E9-CD-7F-70-F1-5F-70-D8-60-9F-39-66-3E-51-75-2C-AD-D1-14-31-89-4C-87-93-4D-61-B7-2F-1C-03-E7-CD-A5-91-ED-49-BA-A0-F2-91; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=PJ97XDwRAclxvbX2uLJmC9ATIAms5554Wm9wp4Ikx6JWFFiWkLT2CiDeStW6pAI_aC7Rd3syEWue4XdQtvNzjslf1CNmB8agq58JJv_aKipUn7r8fLrgReJUKmKQRJH8dPRSqAaNjYNdKp0t8j_a0HfXpV_abaagKhVKuV2dYNfvYipuCHSbeDuvya_bY87gEnejvqqtmZ5OfpuCRFEdjtL3NDOZXZy0gjrhazfojxqp_bE4tARLpUEVujHb6R_bLAOpwbzCj1oqB3ae2m6O_bHQ14Ig_bDi_aiacF2evjGVXMwvmzG6fZX56c4_bA7hrV9OaFnFzSRGj5I79wx9ZtvL3iyDzsujw_c_c
+144441.576 P t1 Login Login.login startTime:2019-05-08 14:44:41:571
+144441.580 P t1 Login Login.structHeaderForLogin
+144441.588 P t1 Login EncUtils.getDefPubKey:uat
+144441.595 P t1 Login EncUtils.getDefPubKey:uat
+144441.602 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+144441.609 P t1 Network traceId = 23e19706-54fd-48f8-b5a6-87e83117cec2, uuid = ac1f1c3a262b1e9d
+144442.112 P t4273 Network traceId = 23e19706-54fd-48f8-b5a6-87e83117cec2, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+144442.119 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+144442.122 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+144442.125 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+144442.127 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+144442.129 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+144442.131 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+144442.134 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+144442.138 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=9E-2B-CB-F3-4D-42-FA-35-9D-47-86-0C-29-F9-19-C9; hwssot=9E-2B-CB-F3-4D-42-FA-35-9D-47-86-0C-29-F9-19-C9; magot3=26522613763177; mcloudnkgbeta1magumag=0000fD8Cuw8KjlaG_koHKvQ1a18:nkgts625j134mwc_CloneID; sid=5B-5A-3A-30-56-FB-98-ED-C9-66-0D-A0-FC-7C-8A-7E-67-1C-0F-D0-4E-21-F8-2F-B0-FB-59-B4-D8-8C-C2-89-33-57-4D-EC-D7-42-E2-80; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=BNiMvVCyO43ZBns3Z4_azjlbCXsnVLR_btNQKiZPRb_aJy_bic3vT5_bqy0NXK2zQDzngC5zy9CgvtsfnH_bs9ge6ykrwJTg8DxwHAFdGOLUX8f_aPBQwt8f117hrhsUpy33K2zbdYpwh4EaFmZyvC98GlOn1wloU3BYkcmQNnpGT2Lsz4Z4cQhn5cM3FTMSjBLCQaVrVeoy6RNKdl4Evn2wE6IcMI2rQckLYmaY9uQRohmFRVAPiSOSC0gPbVH3e_aIPwdCtNxPrzWoO03eQ_bvhT7k1sEVovy0V_a_bBWmpI6OvK7iIvoEyrsQqDfxpgxMJ9KpVB8BIAf6w8m4KnMALu_bL9Ozxw_c_c
+144442.141 P t1 Network traceId = 4f2aa096-4fce-4769-a2d7-e51278bba406, uuid = ac1f1c3a262b1e9d
+144442.145 P t4273 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=9E-2B-CB-F3-4D-42-FA-35-9D-47-86-0C-29-F9-19-C9; hwssot=9E-2B-CB-F3-4D-42-FA-35-9D-47-86-0C-29-F9-19-C9; magot3=26522613763177; mcloudnkgbeta1magumag=0000fD8Cuw8KjlaG_koHKvQ1a18:nkgts625j134mwc_CloneID; sid=5B-5A-3A-30-56-FB-98-ED-C9-66-0D-A0-FC-7C-8A-7E-67-1C-0F-D0-4E-21-F8-2F-B0-FB-59-B4-D8-8C-C2-89-33-57-4D-EC-D7-42-E2-80; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=BNiMvVCyO43ZBns3Z4_azjlbCXsnVLR_btNQKiZPRb_aJy_bic3vT5_bqy0NXK2zQDzngC5zy9CgvtsfnH_bs9ge6ykrwJTg8DxwHAFdGOLUX8f_aPBQwt8f117hrhsUpy33K2zbdYpwh4EaFmZyvC98GlOn1wloU3BYkcmQNnpGT2Lsz4Z4cQhn5cM3FTMSjBLCQaVrVeoy6RNKdl4Evn2wE6IcMI2rQckLYmaY9uQRohmFRVAPiSOSC0gPbVH3e_aIPwdCtNxPrzWoO03eQ_bvhT7k1sEVovy0V_a_bBWmpI6OvK7iIvoEyrsQqDfxpgxMJ9KpVB8BIAf6w8m4KnMALu_bL9Ozxw_c_c
+144442.148 P t4273 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=9E-2B-CB-F3-4D-42-FA-35-9D-47-86-0C-29-F9-19-C9; hwssot=9E-2B-CB-F3-4D-42-FA-35-9D-47-86-0C-29-F9-19-C9; magot3=26522613763177; mcloudnkgbeta1magumag=0000fD8Cuw8KjlaG_koHKvQ1a18:nkgts625j134mwc_CloneID; sid=5B-5A-3A-30-56-FB-98-ED-C9-66-0D-A0-FC-7C-8A-7E-67-1C-0F-D0-4E-21-F8-2F-B0-FB-59-B4-D8-8C-C2-89-33-57-4D-EC-D7-42-E2-80; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=BNiMvVCyO43ZBns3Z4_azjlbCXsnVLR_btNQKiZPRb_aJy_bic3vT5_bqy0NXK2zQDzngC5zy9CgvtsfnH_bs9ge6ykrwJTg8DxwHAFdGOLUX8f_aPBQwt8f117hrhsUpy33K2zbdYpwh4EaFmZyvC98GlOn1wloU3BYkcmQNnpGT2Lsz4Z4cQhn5cM3FTMSjBLCQaVrVeoy6RNKdl4Evn2wE6IcMI2rQckLYmaY9uQRohmFRVAPiSOSC0gPbVH3e_aIPwdCtNxPrzWoO03eQ_bvhT7k1sEVovy0V_a_bBWmpI6OvK7iIvoEyrsQqDfxpgxMJ9KpVB8BIAf6w8m4KnMALu_bL9Ozxw_c_c
+144442.157 P t4273 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144442.158 P t1 Login LoginTask endTime:2019-05-08 14:44:42:155
+144442.164 P t1 Login Login.login endTime:2019-05-08 14:44:42:162
+144442.174 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144442.200 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=9E-2B-CB-F3-4D-42-FA-35-9D-47-86-0C-29-F9-19-C9; hwssot=9E-2B-CB-F3-4D-42-FA-35-9D-47-86-0C-29-F9-19-C9; magot3=26522613763177; mcloudnkgbeta1magumag=0000fD8Cuw8KjlaG_koHKvQ1a18:nkgts625j134mwc_CloneID; sid=5B-5A-3A-30-56-FB-98-ED-C9-66-0D-A0-FC-7C-8A-7E-67-1C-0F-D0-4E-21-F8-2F-B0-FB-59-B4-D8-8C-C2-89-33-57-4D-EC-D7-42-E2-80; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=BNiMvVCyO43ZBns3Z4_azjlbCXsnVLR_btNQKiZPRb_aJy_bic3vT5_bqy0NXK2zQDzngC5zy9CgvtsfnH_bs9ge6ykrwJTg8DxwHAFdGOLUX8f_aPBQwt8f117hrhsUpy33K2zbdYpwh4EaFmZyvC98GlOn1wloU3BYkcmQNnpGT2Lsz4Z4cQhn5cM3FTMSjBLCQaVrVeoy6RNKdl4Evn2wE6IcMI2rQckLYmaY9uQRohmFRVAPiSOSC0gPbVH3e_aIPwdCtNxPrzWoO03eQ_bvhT7k1sEVovy0V_a_bBWmpI6OvK7iIvoEyrsQqDfxpgxMJ9KpVB8BIAf6w8m4KnMALu_bL9Ozxw_c_c
+144520.484 P t1 Login Login.login startTime:2019-05-08 14:45:20:463
+144520.486 P t1 Login Login.structHeaderForLogin
+144520.494 P t1 Login EncUtils.getDefPubKey:uat
+144520.501 P t1 Login EncUtils.getDefPubKey:uat
+144520.507 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+144520.551 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:131)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+144520.564 P t1 Network traceId = 5d0e2eb2-ca00-49ac-934a-65e45d42124a, uuid = ac1f1c3a262b1e9d
+144521.186 P t4277 Network traceId = 5d0e2eb2-ca00-49ac-934a-65e45d42124a, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+144521.210 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+144521.222 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+144521.229 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+144521.239 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+144521.245 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+144521.248 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+144521.262 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+144521.267 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=AF-FF-E8-86-6C-43-A9-0D-01-F2-44-BA-F4-DA-92-D5; hwssot=AF-FF-E8-86-6C-43-A9-0D-39-62-01-2D-FA-3F-BB-23; magot3=26522614077507; mcloudnkgbeta1magumag=0000pgGgm6ZalN66RR1r1zwvVcC:nkgts625j134mwc_CloneID; sid=07-00-84-4F-EA-00-63-A0-BF-8A-9F-17-77-AE-CB-0B-76-62-0A-D4-0A-7D-24-D2-29-15-88-DA-EC-6A-15-F8-74-39-0A-1C-DC-75-E6-3B; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=f2vQraZbuQHx1CWTrrSdXGNIK_b_ajAkKWOLs_aTxSZ0Wxo5afSBNgHac016zwzB5HY9Tmu9pZszx6StPO5DaEZIq5DtqgWnimapdavSNam17akV29EJSQAhfa1ZRqkuHLPv8ctT10xODTf5_b_bVlBemCwzmjc9URB0R9_bot2jQYVsFT7PfToJi1l20cfa1jeBFEsvxsjBFryGNgCv6k9x_aRoYmRNGFyzJ09Pj693K10g939ZqddEn_aPZhx6CmbzMi7MbGOGme2h799eSH8zMxHMZHcD63N_b5VWlFYpGikGz9U_aaa9cAv0xQ9NIwlFtohP2nGVaQF9q3_aZLpqf2Tx8UncA_c_c
+144521.271 P t1 Network traceId = 8c92b938-ffca-4efc-97b6-99930dcc6829, uuid = ac1f1c3a262b1e9d
+144521.276 P t4277 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=AF-FF-E8-86-6C-43-A9-0D-01-F2-44-BA-F4-DA-92-D5; hwssot=AF-FF-E8-86-6C-43-A9-0D-39-62-01-2D-FA-3F-BB-23; magot3=26522614077507; mcloudnkgbeta1magumag=0000pgGgm6ZalN66RR1r1zwvVcC:nkgts625j134mwc_CloneID; sid=07-00-84-4F-EA-00-63-A0-BF-8A-9F-17-77-AE-CB-0B-76-62-0A-D4-0A-7D-24-D2-29-15-88-DA-EC-6A-15-F8-74-39-0A-1C-DC-75-E6-3B; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=f2vQraZbuQHx1CWTrrSdXGNIK_b_ajAkKWOLs_aTxSZ0Wxo5afSBNgHac016zwzB5HY9Tmu9pZszx6StPO5DaEZIq5DtqgWnimapdavSNam17akV29EJSQAhfa1ZRqkuHLPv8ctT10xODTf5_b_bVlBemCwzmjc9URB0R9_bot2jQYVsFT7PfToJi1l20cfa1jeBFEsvxsjBFryGNgCv6k9x_aRoYmRNGFyzJ09Pj693K10g939ZqddEn_aPZhx6CmbzMi7MbGOGme2h799eSH8zMxHMZHcD63N_b5VWlFYpGikGz9U_aaa9cAv0xQ9NIwlFtohP2nGVaQF9q3_aZLpqf2Tx8UncA_c_c
+144521.278 P t4277 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=AF-FF-E8-86-6C-43-A9-0D-01-F2-44-BA-F4-DA-92-D5; hwssot=AF-FF-E8-86-6C-43-A9-0D-39-62-01-2D-FA-3F-BB-23; magot3=26522614077507; mcloudnkgbeta1magumag=0000pgGgm6ZalN66RR1r1zwvVcC:nkgts625j134mwc_CloneID; sid=07-00-84-4F-EA-00-63-A0-BF-8A-9F-17-77-AE-CB-0B-76-62-0A-D4-0A-7D-24-D2-29-15-88-DA-EC-6A-15-F8-74-39-0A-1C-DC-75-E6-3B; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=f2vQraZbuQHx1CWTrrSdXGNIK_b_ajAkKWOLs_aTxSZ0Wxo5afSBNgHac016zwzB5HY9Tmu9pZszx6StPO5DaEZIq5DtqgWnimapdavSNam17akV29EJSQAhfa1ZRqkuHLPv8ctT10xODTf5_b_bVlBemCwzmjc9URB0R9_bot2jQYVsFT7PfToJi1l20cfa1jeBFEsvxsjBFryGNgCv6k9x_aRoYmRNGFyzJ09Pj693K10g939ZqddEn_aPZhx6CmbzMi7MbGOGme2h799eSH8zMxHMZHcD63N_b5VWlFYpGikGz9U_aaa9cAv0xQ9NIwlFtohP2nGVaQF9q3_aZLpqf2Tx8UncA_c_c
+144521.283 P t4277 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144521.297 P t1 Login LoginTask endTime:2019-05-08 14:45:21:296
+144521.299 P t1 Login you does not compile lark-mdm.jar
+144521.299 P t1 Login use X86Storage
+144521.306 P t1 Login Login.login endTime:2019-05-08 14:45:21:304
+144521.306 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144521.355 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=AF-FF-E8-86-6C-43-A9-0D-01-F2-44-BA-F4-DA-92-D5; hwssot=AF-FF-E8-86-6C-43-A9-0D-39-62-01-2D-FA-3F-BB-23; magot3=26522614077507; mcloudnkgbeta1magumag=0000pgGgm6ZalN66RR1r1zwvVcC:nkgts625j134mwc_CloneID; sid=07-00-84-4F-EA-00-63-A0-BF-8A-9F-17-77-AE-CB-0B-76-62-0A-D4-0A-7D-24-D2-29-15-88-DA-EC-6A-15-F8-74-39-0A-1C-DC-75-E6-3B; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=f2vQraZbuQHx1CWTrrSdXGNIK_b_ajAkKWOLs_aTxSZ0Wxo5afSBNgHac016zwzB5HY9Tmu9pZszx6StPO5DaEZIq5DtqgWnimapdavSNam17akV29EJSQAhfa1ZRqkuHLPv8ctT10xODTf5_b_bVlBemCwzmjc9URB0R9_bot2jQYVsFT7PfToJi1l20cfa1jeBFEsvxsjBFryGNgCv6k9x_aRoYmRNGFyzJ09Pj693K10g939ZqddEn_aPZhx6CmbzMi7MbGOGme2h799eSH8zMxHMZHcD63N_b5VWlFYpGikGz9U_aaa9cAv0xQ9NIwlFtohP2nGVaQF9q3_aZLpqf2Tx8UncA_c_c
+144647.653 P t1 Login Login.login startTime:2019-05-08 14:46:47:605
+144647.662 P t1 Login Login.structHeaderForLogin
+144647.681 P t1 Login EncUtils.getDefPubKey:uat
+144647.711 P t1 Login EncUtils.getDefPubKey:uat
+144647.735 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+144647.796 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:131)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+144647.847 P t1 Network traceId = 4b544748-000b-4bcb-9f07-920336ee39f5, uuid = ac1f1c3a262b1e9d
+144648.674 P t4288 Network traceId = 4b544748-000b-4bcb-9f07-920336ee39f5, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+144648.735 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+144648.747 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+144648.753 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+144648.760 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+144648.766 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+144648.770 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+144648.815 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+144648.823 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-64-50-4B-1A-4D-11-29-99; hwssot=E2-C1-29-4C-1D-39-CE-A4-64-50-4B-1A-4D-11-29-99; magot3=26522614352256; mcloudnkgbeta1magumag=0000jbCXLze_hFl1G-R70y7Pawx:nkgts625j134mwc_CloneID; sid=D9-7C-E8-90-5B-43-B1-5A-7E-0D-85-ED-40-76-A3-ED-C7-F2-A3-36-4D-9C-D9-9F-C3-FC-77-3D-61-4A-BE-95-C4-42-10-36-6D-11-59-60; sip=6C-4C-28-BD-0D-B3-85-EC-84-77-2C-D9-C8-F0-D0-EE-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=HgAS3G_bLjIoOh_aNJDDQN0N8JOmmiXatKROVV5C23QXKnO109tLkgN3L_awV6AUE6rn8XuemLsZPt2bpqbntIbjT_bEo3i_aYdmCTpOa9WgwkrIGV3DMm8wnoM1_agpV7KLzENpydOaKE8Gb75ibtxVzAIWKAxmKHCP9A7Yqg5YRW5TAESHOF_a3ohvLiqj_b1YuJt3otfxsG3u3_aIgVMtAlcYD92_amAyYYULEAjH23wYfMrac1X3QyIi_brsP6qdWHmQl_bM2dOkNApHefrQctpi8NjywKUx8n7fyAFikzLkEeWVnibLuQ3m3vKyGe7wQyUdt097Ey2RBqrjHsMKhYGH9MVugg_c_c
+144648.834 P t1 Network traceId = 70397479-fa98-4c0f-b26e-e30e7ed37d6d, uuid = ac1f1c3a262b1e9d
+144648.858 P t4288 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-64-50-4B-1A-4D-11-29-99; hwssot=E2-C1-29-4C-1D-39-CE-A4-64-50-4B-1A-4D-11-29-99; magot3=26522614352256; mcloudnkgbeta1magumag=0000jbCXLze_hFl1G-R70y7Pawx:nkgts625j134mwc_CloneID; sid=D9-7C-E8-90-5B-43-B1-5A-7E-0D-85-ED-40-76-A3-ED-C7-F2-A3-36-4D-9C-D9-9F-C3-FC-77-3D-61-4A-BE-95-C4-42-10-36-6D-11-59-60; sip=6C-4C-28-BD-0D-B3-85-EC-84-77-2C-D9-C8-F0-D0-EE-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=HgAS3G_bLjIoOh_aNJDDQN0N8JOmmiXatKROVV5C23QXKnO109tLkgN3L_awV6AUE6rn8XuemLsZPt2bpqbntIbjT_bEo3i_aYdmCTpOa9WgwkrIGV3DMm8wnoM1_agpV7KLzENpydOaKE8Gb75ibtxVzAIWKAxmKHCP9A7Yqg5YRW5TAESHOF_a3ohvLiqj_b1YuJt3otfxsG3u3_aIgVMtAlcYD92_amAyYYULEAjH23wYfMrac1X3QyIi_brsP6qdWHmQl_bM2dOkNApHefrQctpi8NjywKUx8n7fyAFikzLkEeWVnibLuQ3m3vKyGe7wQyUdt097Ey2RBqrjHsMKhYGH9MVugg_c_c
+144648.868 P t4288 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-64-50-4B-1A-4D-11-29-99; hwssot=E2-C1-29-4C-1D-39-CE-A4-64-50-4B-1A-4D-11-29-99; magot3=26522614352256; mcloudnkgbeta1magumag=0000jbCXLze_hFl1G-R70y7Pawx:nkgts625j134mwc_CloneID; sid=D9-7C-E8-90-5B-43-B1-5A-7E-0D-85-ED-40-76-A3-ED-C7-F2-A3-36-4D-9C-D9-9F-C3-FC-77-3D-61-4A-BE-95-C4-42-10-36-6D-11-59-60; sip=6C-4C-28-BD-0D-B3-85-EC-84-77-2C-D9-C8-F0-D0-EE-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=HgAS3G_bLjIoOh_aNJDDQN0N8JOmmiXatKROVV5C23QXKnO109tLkgN3L_awV6AUE6rn8XuemLsZPt2bpqbntIbjT_bEo3i_aYdmCTpOa9WgwkrIGV3DMm8wnoM1_agpV7KLzENpydOaKE8Gb75ibtxVzAIWKAxmKHCP9A7Yqg5YRW5TAESHOF_a3ohvLiqj_b1YuJt3otfxsG3u3_aIgVMtAlcYD92_amAyYYULEAjH23wYfMrac1X3QyIi_brsP6qdWHmQl_bM2dOkNApHefrQctpi8NjywKUx8n7fyAFikzLkEeWVnibLuQ3m3vKyGe7wQyUdt097Ey2RBqrjHsMKhYGH9MVugg_c_c
+144648.887 P t4288 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144648.893 P t1 Login LoginTask endTime:2019-05-08 14:46:48:886
+144648.898 P t1 Login you does not compile lark-mdm.jar
+144648.902 P t1 Login use X86Storage
+144648.920 P t1 Login Login.login endTime:2019-05-08 14:46:48:916
+144648.924 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144649.583 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-64-50-4B-1A-4D-11-29-99; hwssot=E2-C1-29-4C-1D-39-CE-A4-64-50-4B-1A-4D-11-29-99; magot3=26522614352256; mcloudnkgbeta1magumag=0000jbCXLze_hFl1G-R70y7Pawx:nkgts625j134mwc_CloneID; sid=D9-7C-E8-90-5B-43-B1-5A-7E-0D-85-ED-40-76-A3-ED-C7-F2-A3-36-4D-9C-D9-9F-C3-FC-77-3D-61-4A-BE-95-C4-42-10-36-6D-11-59-60; sip=6C-4C-28-BD-0D-B3-85-EC-84-77-2C-D9-C8-F0-D0-EE-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=HgAS3G_bLjIoOh_aNJDDQN0N8JOmmiXatKROVV5C23QXKnO109tLkgN3L_awV6AUE6rn8XuemLsZPt2bpqbntIbjT_bEo3i_aYdmCTpOa9WgwkrIGV3DMm8wnoM1_agpV7KLzENpydOaKE8Gb75ibtxVzAIWKAxmKHCP9A7Yqg5YRW5TAESHOF_a3ohvLiqj_b1YuJt3otfxsG3u3_aIgVMtAlcYD92_amAyYYULEAjH23wYfMrac1X3QyIi_brsP6qdWHmQl_bM2dOkNApHefrQctpi8NjywKUx8n7fyAFikzLkEeWVnibLuQ3m3vKyGe7wQyUdt097Ey2RBqrjHsMKhYGH9MVugg_c_c
+144720.465 P t1 Login Login.login startTime:2019-05-08 14:47:20:422
+144720.472 P t1 Login Login.structHeaderForLogin
+144720.487 P t1 Login EncUtils.getDefPubKey:uat
+144720.513 P t1 Login EncUtils.getDefPubKey:uat
+144720.534 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+144720.594 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:131)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+144720.643 P t1 Network traceId = 07a25247-3f98-4513-9833-64122587d109, uuid = ac1f1c3a262b1e9d
+144721.430 P t4296 Network traceId = 07a25247-3f98-4513-9833-64122587d109, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+144721.475 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+144721.490 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+144721.498 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+144721.504 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+144721.511 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+144721.517 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+144721.560 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+144721.568 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; sip=6C-4C-28-BD-0D-B3-85-EC-84-77-2C-D9-C8-F0-D0-EE-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-96-0F-A8-4F-9D-D8-08-03; hwssot=E2-C1-29-4C-1D-39-CE-A4-96-0F-A8-4F-9D-D8-08-03; magot3=26522614452253; mcloudnkgbeta1magumag=0000WU6dr9h66zJdcSS0h6oQs3w:nkgts625j134mwc_CloneID; sid=A5-4D-48-07-34-57-7A-43-1B-FE-AC-35-71-91-3E-D9-E8-53-4A-78-F4-F0-1B-29-8B-D4-74-3B-71-D3-C8-19-CB-13-50-4A-40-B5-1B-51; hwsso_uniportal=UcPkGZOmfJZe7r_aI5MKfPo_b_asYgTzfyih_bhe7Qa_a6nB4OOjua85rp_buLLXhZNvsidIYRvvar_ac2zEpBS12oFVY7m_aIi9_aU9QFayOkMZ7LaM76UngEakJ3QTInPSBLht3cdBvDLvoBTf4OUvvKeq7M1exc9LfdBbWf_alsDrQxVYIE5ioQ5BPMenfIPLHQYTA97zwUnx_bCOexsfnZBT41H5Rfox0lyLd0Ro3azcHR2pFVkGNi7kKoqFt0KNIipRhURirFjEE1_blr3wkOacHF2gO7IRlOj4tm8eoS1R8G7AGsex_bo3Q42biI4J7lgApo4CLenOUwR8QiDGqiGfeh9JHcg_c_c
+144721.579 P t1 Network traceId = 4d50f5cc-fe3a-435d-bc5b-df2b27790ae4, uuid = ac1f1c3a262b1e9d
+144721.600 P t4296 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; sip=6C-4C-28-BD-0D-B3-85-EC-84-77-2C-D9-C8-F0-D0-EE-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-96-0F-A8-4F-9D-D8-08-03; hwssot=E2-C1-29-4C-1D-39-CE-A4-96-0F-A8-4F-9D-D8-08-03; magot3=26522614452253; mcloudnkgbeta1magumag=0000WU6dr9h66zJdcSS0h6oQs3w:nkgts625j134mwc_CloneID; sid=A5-4D-48-07-34-57-7A-43-1B-FE-AC-35-71-91-3E-D9-E8-53-4A-78-F4-F0-1B-29-8B-D4-74-3B-71-D3-C8-19-CB-13-50-4A-40-B5-1B-51; hwsso_uniportal=UcPkGZOmfJZe7r_aI5MKfPo_b_asYgTzfyih_bhe7Qa_a6nB4OOjua85rp_buLLXhZNvsidIYRvvar_ac2zEpBS12oFVY7m_aIi9_aU9QFayOkMZ7LaM76UngEakJ3QTInPSBLht3cdBvDLvoBTf4OUvvKeq7M1exc9LfdBbWf_alsDrQxVYIE5ioQ5BPMenfIPLHQYTA97zwUnx_bCOexsfnZBT41H5Rfox0lyLd0Ro3azcHR2pFVkGNi7kKoqFt0KNIipRhURirFjEE1_blr3wkOacHF2gO7IRlOj4tm8eoS1R8G7AGsex_bo3Q42biI4J7lgApo4CLenOUwR8QiDGqiGfeh9JHcg_c_c
+144721.607 P t4296 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; sip=6C-4C-28-BD-0D-B3-85-EC-84-77-2C-D9-C8-F0-D0-EE-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-96-0F-A8-4F-9D-D8-08-03; hwssot=E2-C1-29-4C-1D-39-CE-A4-96-0F-A8-4F-9D-D8-08-03; magot3=26522614452253; mcloudnkgbeta1magumag=0000WU6dr9h66zJdcSS0h6oQs3w:nkgts625j134mwc_CloneID; sid=A5-4D-48-07-34-57-7A-43-1B-FE-AC-35-71-91-3E-D9-E8-53-4A-78-F4-F0-1B-29-8B-D4-74-3B-71-D3-C8-19-CB-13-50-4A-40-B5-1B-51; hwsso_uniportal=UcPkGZOmfJZe7r_aI5MKfPo_b_asYgTzfyih_bhe7Qa_a6nB4OOjua85rp_buLLXhZNvsidIYRvvar_ac2zEpBS12oFVY7m_aIi9_aU9QFayOkMZ7LaM76UngEakJ3QTInPSBLht3cdBvDLvoBTf4OUvvKeq7M1exc9LfdBbWf_alsDrQxVYIE5ioQ5BPMenfIPLHQYTA97zwUnx_bCOexsfnZBT41H5Rfox0lyLd0Ro3azcHR2pFVkGNi7kKoqFt0KNIipRhURirFjEE1_blr3wkOacHF2gO7IRlOj4tm8eoS1R8G7AGsex_bo3Q42biI4J7lgApo4CLenOUwR8QiDGqiGfeh9JHcg_c_c
+144721.626 P t4296 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144721.642 P t1 Login LoginTask endTime:2019-05-08 14:47:21:639
+144721.647 P t1 Login you does not compile lark-mdm.jar
+144721.650 P t1 Login use X86Storage
+144721.669 P t1 Login Login.login endTime:2019-05-08 14:47:21:665
+144721.671 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144722.251 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; sip=6C-4C-28-BD-0D-B3-85-EC-84-77-2C-D9-C8-F0-D0-EE-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-96-0F-A8-4F-9D-D8-08-03; hwssot=E2-C1-29-4C-1D-39-CE-A4-96-0F-A8-4F-9D-D8-08-03; magot3=26522614452253; mcloudnkgbeta1magumag=0000WU6dr9h66zJdcSS0h6oQs3w:nkgts625j134mwc_CloneID; sid=A5-4D-48-07-34-57-7A-43-1B-FE-AC-35-71-91-3E-D9-E8-53-4A-78-F4-F0-1B-29-8B-D4-74-3B-71-D3-C8-19-CB-13-50-4A-40-B5-1B-51; hwsso_uniportal=UcPkGZOmfJZe7r_aI5MKfPo_b_asYgTzfyih_bhe7Qa_a6nB4OOjua85rp_buLLXhZNvsidIYRvvar_ac2zEpBS12oFVY7m_aIi9_aU9QFayOkMZ7LaM76UngEakJ3QTInPSBLht3cdBvDLvoBTf4OUvvKeq7M1exc9LfdBbWf_alsDrQxVYIE5ioQ5BPMenfIPLHQYTA97zwUnx_bCOexsfnZBT41H5Rfox0lyLd0Ro3azcHR2pFVkGNi7kKoqFt0KNIipRhURirFjEE1_blr3wkOacHF2gO7IRlOj4tm8eoS1R8G7AGsex_bo3Q42biI4J7lgApo4CLenOUwR8QiDGqiGfeh9JHcg_c_c
+144747.773 P t1 Login Login.login startTime:2019-05-08 14:47:47:711
+144747.787 P t1 Login Login.structHeaderForLogin
+144747.800 P t1 Login EncUtils.getDefPubKey:uat
+144747.831 P t1 Login EncUtils.getDefPubKey:uat
+144747.851 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+144747.918 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:131)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+144747.967 P t1 Network traceId = 3fd0b5de-bd91-48c0-b2e0-66ce093a894f, uuid = ac1f1c3a262b1e9d
+144749.157 P t4304 Network traceId = 3fd0b5de-bd91-48c0-b2e0-66ce093a894f, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+144749.199 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+144749.214 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+144749.223 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+144749.230 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+144749.237 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+144749.243 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+144749.288 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+144749.298 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-90-55-D4-15-99-8F-5D-47; hwssot=E2-C1-29-4C-1D-39-CE-A4-90-55-D4-15-99-8F-5D-47; magot3=26522614537612; mcloudnkgbeta1magumag=0000c5QTO-b5N9TmE6dkDEPT-FO:nkgts625j134mwc_CloneID; sid=46-DC-27-0F-69-44-29-EC-4F-B4-E3-3B-78-95-6B-13-BE-4D-C9-9F-4E-4A-3B-DD-7C-69-0E-8C-7A-5C-4B-24-AC-63-51-28-60-A6-35-32; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=UKPp6AuYPKrqEbx9jplhxgq5U_aTjQxp9pyS7BefYrS5K5aS_b_axbhh_a5ORm_a2GWQmOB3BvukkA56htxD8RD5Rb6CPwcuR3_brSVwBtKYSqj1NsxurIzxjRXOkTzlotUPaY_bEetS5NlRRas1SccmJK2A9_bpKU6EMwZGyEzV0YHKU4D1jJ_bNB_bqrKwf9h6Ikhl19nClmvWP4jAYrsTJtGU82_abuyVD_aSy18r0Srzz8FwBBD_aKWs_bncPfBwFiTrE4yaYBggzdNZ0wqvEmW0DlX76SXN3AcnASWMAfBzgi0RP_aAExH5YwtjkpoI6_bFy2hTIoYAXBuW0pLiMuaqD2_a4aqOWkw_c_c
+144749.310 P t1 Network traceId = 7113022b-c90a-452f-a30f-56c7cb68fabc, uuid = ac1f1c3a262b1e9d
+144749.330 P t4304 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-90-55-D4-15-99-8F-5D-47; hwssot=E2-C1-29-4C-1D-39-CE-A4-90-55-D4-15-99-8F-5D-47; magot3=26522614537612; mcloudnkgbeta1magumag=0000c5QTO-b5N9TmE6dkDEPT-FO:nkgts625j134mwc_CloneID; sid=46-DC-27-0F-69-44-29-EC-4F-B4-E3-3B-78-95-6B-13-BE-4D-C9-9F-4E-4A-3B-DD-7C-69-0E-8C-7A-5C-4B-24-AC-63-51-28-60-A6-35-32; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=UKPp6AuYPKrqEbx9jplhxgq5U_aTjQxp9pyS7BefYrS5K5aS_b_axbhh_a5ORm_a2GWQmOB3BvukkA56htxD8RD5Rb6CPwcuR3_brSVwBtKYSqj1NsxurIzxjRXOkTzlotUPaY_bEetS5NlRRas1SccmJK2A9_bpKU6EMwZGyEzV0YHKU4D1jJ_bNB_bqrKwf9h6Ikhl19nClmvWP4jAYrsTJtGU82_abuyVD_aSy18r0Srzz8FwBBD_aKWs_bncPfBwFiTrE4yaYBggzdNZ0wqvEmW0DlX76SXN3AcnASWMAfBzgi0RP_aAExH5YwtjkpoI6_bFy2hTIoYAXBuW0pLiMuaqD2_a4aqOWkw_c_c
+144749.335 P t4304 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-90-55-D4-15-99-8F-5D-47; hwssot=E2-C1-29-4C-1D-39-CE-A4-90-55-D4-15-99-8F-5D-47; magot3=26522614537612; mcloudnkgbeta1magumag=0000c5QTO-b5N9TmE6dkDEPT-FO:nkgts625j134mwc_CloneID; sid=46-DC-27-0F-69-44-29-EC-4F-B4-E3-3B-78-95-6B-13-BE-4D-C9-9F-4E-4A-3B-DD-7C-69-0E-8C-7A-5C-4B-24-AC-63-51-28-60-A6-35-32; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=UKPp6AuYPKrqEbx9jplhxgq5U_aTjQxp9pyS7BefYrS5K5aS_b_axbhh_a5ORm_a2GWQmOB3BvukkA56htxD8RD5Rb6CPwcuR3_brSVwBtKYSqj1NsxurIzxjRXOkTzlotUPaY_bEetS5NlRRas1SccmJK2A9_bpKU6EMwZGyEzV0YHKU4D1jJ_bNB_bqrKwf9h6Ikhl19nClmvWP4jAYrsTJtGU82_abuyVD_aSy18r0Srzz8FwBBD_aKWs_bncPfBwFiTrE4yaYBggzdNZ0wqvEmW0DlX76SXN3AcnASWMAfBzgi0RP_aAExH5YwtjkpoI6_bFy2hTIoYAXBuW0pLiMuaqD2_a4aqOWkw_c_c
+144749.357 P t4304 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144749.375 P t1 Login LoginTask endTime:2019-05-08 14:47:49:372
+144749.380 P t1 Login you does not compile lark-mdm.jar
+144749.383 P t1 Login use X86Storage
+144749.403 P t1 Login Login.login endTime:2019-05-08 14:47:49:400
+144749.407 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144749.960 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-90-55-D4-15-99-8F-5D-47; hwssot=E2-C1-29-4C-1D-39-CE-A4-90-55-D4-15-99-8F-5D-47; magot3=26522614537612; mcloudnkgbeta1magumag=0000c5QTO-b5N9TmE6dkDEPT-FO:nkgts625j134mwc_CloneID; sid=46-DC-27-0F-69-44-29-EC-4F-B4-E3-3B-78-95-6B-13-BE-4D-C9-9F-4E-4A-3B-DD-7C-69-0E-8C-7A-5C-4B-24-AC-63-51-28-60-A6-35-32; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=UKPp6AuYPKrqEbx9jplhxgq5U_aTjQxp9pyS7BefYrS5K5aS_b_axbhh_a5ORm_a2GWQmOB3BvukkA56htxD8RD5Rb6CPwcuR3_brSVwBtKYSqj1NsxurIzxjRXOkTzlotUPaY_bEetS5NlRRas1SccmJK2A9_bpKU6EMwZGyEzV0YHKU4D1jJ_bNB_bqrKwf9h6Ikhl19nClmvWP4jAYrsTJtGU82_abuyVD_aSy18r0Srzz8FwBBD_aKWs_bncPfBwFiTrE4yaYBggzdNZ0wqvEmW0DlX76SXN3AcnASWMAfBzgi0RP_aAExH5YwtjkpoI6_bFy2hTIoYAXBuW0pLiMuaqD2_a4aqOWkw_c_c
+144759.933 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; hwssotinter=E2-C1-29-4C-1D-39-CE-A4-90-55-D4-15-99-8F-5D-47; hwssot=E2-C1-29-4C-1D-39-CE-A4-90-55-D4-15-99-8F-5D-47; magot3=26522614537612; mcloudnkgbeta1magumag=0000c5QTO-b5N9TmE6dkDEPT-FO:nkgts625j134mwc_CloneID; sid=46-DC-27-0F-69-44-29-EC-4F-B4-E3-3B-78-95-6B-13-BE-4D-C9-9F-4E-4A-3B-DD-7C-69-0E-8C-7A-5C-4B-24-AC-63-51-28-60-A6-35-32; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=UKPp6AuYPKrqEbx9jplhxgq5U_aTjQxp9pyS7BefYrS5K5aS_b_axbhh_a5ORm_a2GWQmOB3BvukkA56htxD8RD5Rb6CPwcuR3_brSVwBtKYSqj1NsxurIzxjRXOkTzlotUPaY_bEetS5NlRRas1SccmJK2A9_bpKU6EMwZGyEzV0YHKU4D1jJ_bNB_bqrKwf9h6Ikhl19nClmvWP4jAYrsTJtGU82_abuyVD_aSy18r0Srzz8FwBBD_aKWs_bncPfBwFiTrE4yaYBggzdNZ0wqvEmW0DlX76SXN3AcnASWMAfBzgi0RP_aAExH5YwtjkpoI6_bFy2hTIoYAXBuW0pLiMuaqD2_a4aqOWkw_c_c
+144923.137 P t1 Login Login.login startTime:2019-05-08 14:49:23:135
+144923.139 P t1 Login Login.structHeaderForLogin
+144923.143 P t1 Login EncUtils.getDefPubKey:uat
+144923.148 P t1 Login EncUtils.getDefPubKey:uat
+144923.152 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+144923.166 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:131)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+144923.173 P t1 Network traceId = de0366c9-7894-47d9-b0ec-aeb8f03f9565, uuid = ac1f1c3a262b1e9d
+144923.719 P t4315 Network traceId = de0366c9-7894-47d9-b0ec-aeb8f03f9565, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+144923.731 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+144923.735 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+144923.738 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+144923.740 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+144923.742 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+144923.743 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+144923.754 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+144923.758 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=2D-AE-A3-00-90-4B-26-3F-2B-86-D1-97-95-35-A3-41; hwssot=2D-AE-A3-00-90-4B-26-3F-2B-86-D1-97-95-35-A3-41; magot3=26522615031370; mcloudnkgbeta1magumag=0000CvnTJ8Bn5Govtul2ZIG-toU:nkgts625j134mwc_CloneID; sid=0F-3B-F3-02-2C-C9-7D-A5-31-88-7E-B9-D5-7C-D1-7F-6B-2D-5B-4D-B2-86-B9-2D-7E-58-41-55-36-40-E0-9C-57-00-BA-87-38-42-7F-2B; hwsso_uniportal=ZbpOnJJHjQlBbz_bmjCPmSYm_b5p_aN91LhwAe05rxtT_aLknE0GoPs7SrBu6dc2jGucWFJEMUPCNGJL1qXa9GCdfw_aAIDJi_bMrzl6yOEp5DTPlcSlsr6ju6hlEYlflww3n2KRmutrmjyouNZIMAG8gCkS1Ie80Rrexk4xefYdG01xVWg_bxLDLk4tE9oiIlnAmQO1Ib8mJLpDOvmPQYHtn69Yp02hnmR09d799JPnGCGUjCxPxsFC0FOagrKmJT9O7v9VXQjLX2wtp8C8DyC_b2bFzhr4iOiOdncSH1LAmfFhxANc_aGWQaxjNUvD9J_bDkJKfJb1lErmC7JAApzDyR9iVGtg_c_c
+144923.762 P t1 Network traceId = 00a97b1a-a976-4818-abc2-22a06fd60ad6, uuid = ac1f1c3a262b1e9d
+144923.768 P t4315 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=2D-AE-A3-00-90-4B-26-3F-2B-86-D1-97-95-35-A3-41; hwssot=2D-AE-A3-00-90-4B-26-3F-2B-86-D1-97-95-35-A3-41; magot3=26522615031370; mcloudnkgbeta1magumag=0000CvnTJ8Bn5Govtul2ZIG-toU:nkgts625j134mwc_CloneID; sid=0F-3B-F3-02-2C-C9-7D-A5-31-88-7E-B9-D5-7C-D1-7F-6B-2D-5B-4D-B2-86-B9-2D-7E-58-41-55-36-40-E0-9C-57-00-BA-87-38-42-7F-2B; hwsso_uniportal=ZbpOnJJHjQlBbz_bmjCPmSYm_b5p_aN91LhwAe05rxtT_aLknE0GoPs7SrBu6dc2jGucWFJEMUPCNGJL1qXa9GCdfw_aAIDJi_bMrzl6yOEp5DTPlcSlsr6ju6hlEYlflww3n2KRmutrmjyouNZIMAG8gCkS1Ie80Rrexk4xefYdG01xVWg_bxLDLk4tE9oiIlnAmQO1Ib8mJLpDOvmPQYHtn69Yp02hnmR09d799JPnGCGUjCxPxsFC0FOagrKmJT9O7v9VXQjLX2wtp8C8DyC_b2bFzhr4iOiOdncSH1LAmfFhxANc_aGWQaxjNUvD9J_bDkJKfJb1lErmC7JAApzDyR9iVGtg_c_c
+144923.770 P t4315 Network logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=2D-AE-A3-00-90-4B-26-3F-2B-86-D1-97-95-35-A3-41; hwssot=2D-AE-A3-00-90-4B-26-3F-2B-86-D1-97-95-35-A3-41; magot3=26522615031370; mcloudnkgbeta1magumag=0000CvnTJ8Bn5Govtul2ZIG-toU:nkgts625j134mwc_CloneID; sid=0F-3B-F3-02-2C-C9-7D-A5-31-88-7E-B9-D5-7C-D1-7F-6B-2D-5B-4D-B2-86-B9-2D-7E-58-41-55-36-40-E0-9C-57-00-BA-87-38-42-7F-2B; hwsso_uniportal=ZbpOnJJHjQlBbz_bmjCPmSYm_b5p_aN91LhwAe05rxtT_aLknE0GoPs7SrBu6dc2jGucWFJEMUPCNGJL1qXa9GCdfw_aAIDJi_bMrzl6yOEp5DTPlcSlsr6ju6hlEYlflww3n2KRmutrmjyouNZIMAG8gCkS1Ie80Rrexk4xefYdG01xVWg_bxLDLk4tE9oiIlnAmQO1Ib8mJLpDOvmPQYHtn69Yp02hnmR09d799JPnGCGUjCxPxsFC0FOagrKmJT9O7v9VXQjLX2wtp8C8DyC_b2bFzhr4iOiOdncSH1LAmfFhxANc_aGWQaxjNUvD9J_bDkJKfJb1lErmC7JAApzDyR9iVGtg_c_c
+144923.775 P t4315 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144923.780 P t1 Login LoginTask endTime:2019-05-08 14:49:23:778
+144923.782 P t1 Login you does not compile lark-mdm.jar
+144923.784 P t1 Login use X86Storage
+144923.790 P t1 Login Login.login endTime:2019-05-08 14:49:23:788
+144923.791 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+144923.825 P t1 CookieUtils logFlag=in; uid=CC-31-CF-CB-3F-C2-CF-41; suid=CC-31-CF-CB-3F-C2-CF-41; sip=6C-4C-28-BD-0D-B3-85-EC-C0-8C-8B-62-5D-38-44-B2-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=2D-AE-A3-00-90-4B-26-3F-2B-86-D1-97-95-35-A3-41; hwssot=2D-AE-A3-00-90-4B-26-3F-2B-86-D1-97-95-35-A3-41; magot3=26522615031370; mcloudnkgbeta1magumag=0000CvnTJ8Bn5Govtul2ZIG-toU:nkgts625j134mwc_CloneID; sid=0F-3B-F3-02-2C-C9-7D-A5-31-88-7E-B9-D5-7C-D1-7F-6B-2D-5B-4D-B2-86-B9-2D-7E-58-41-55-36-40-E0-9C-57-00-BA-87-38-42-7F-2B; hwsso_uniportal=ZbpOnJJHjQlBbz_bmjCPmSYm_b5p_aN91LhwAe05rxtT_aLknE0GoPs7SrBu6dc2jGucWFJEMUPCNGJL1qXa9GCdfw_aAIDJi_bMrzl6yOEp5DTPlcSlsr6ju6hlEYlflww3n2KRmutrmjyouNZIMAG8gCkS1Ie80Rrexk4xefYdG01xVWg_bxLDLk4tE9oiIlnAmQO1Ib8mJLpDOvmPQYHtn69Yp02hnmR09d799JPnGCGUjCxPxsFC0FOagrKmJT9O7v9VXQjLX2wtp8C8DyC_b2bFzhr4iOiOdncSH1LAmfFhxANc_aGWQaxjNUvD9J_bDkJKfJb1lErmC7JAApzDyR9iVGtg_c_c
+145052.540 P t1 Login Login.login startTime:2019-05-08 14:50:52:519
+145052.543 P t1 Login Login.structHeaderForLogin
+145052.552 P t1 Login EncUtils.getDefPubKey:uat
+145052.560 P t1 Login EncUtils.getDefPubKey:uat
+145052.566 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+145052.614 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:132)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+145052.626 P t1 Network traceId = 53f28c67-f793-43cd-ba44-aa7b6ab9c480, uuid = ac1f1c3a262b1e9d
+145053.892 P t4321 Network traceId = 53f28c67-f793-43cd-ba44-aa7b6ab9c480, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+145053.918 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+145053.926 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+145053.928 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+145053.931 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+145053.933 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+145053.936 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+145053.950 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+145053.955 P t1 CookieUtils logFlag=in; hwssotinter=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; hwssot=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; magot3=26522615310251; mcloudnkgbeta1magumag=0000zt8Ql_s1AT8YSUXs1RGO2lG:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=BD-CF-6C-83-EF-C4-A9-CC-62-F0-46-DB-20-CB-5A-06-A0-16-67-44-83-DB-42-E8-3D-92-69-09-7C-A0-FB-1C-DD-D3-F3-89-23-2D-9F-4D; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwsso_uniportal=QSBcefCUNL9dCvXPOSEknvtAgkTfG_a2jeIEmSxF3yLlx2iJ5kwb4izUr1_bV7QzFPhekswBIEzXlciDJFnQJdeJaxYhsxFbyt8VQFE_aK7oZYnc7GVuVo_aIwsuySjr_aSMTl7Eurf2LCRtIivQqMqUjohrKTZ_bIzoh8HcgMHgrUZCJYp7UYhn0LERMOK70jp4pq2HXpOfcjD0_aQ6MOoBFIHkC1SdtwSOa1a_bGHREznW4MaKQRvj7N6XDU7ovvLGwtrOCGdvlz_aO1l8HcfcJhaS5RiwYcJaTVmDmfxN15La9pEqyZAlr2l_bQclhdzoLS91ZVf2AQqJGr1xLsCeR3_bZpdYQ_c_c
+145053.960 P t1 Network traceId = 2f4420a4-ecaa-4239-8399-aa46c7eaeaf3, uuid = ac1f1c3a262b1e9d
+145053.968 P t4321 CookieUtils logFlag=in; hwssotinter=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; hwssot=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; magot3=26522615310251; mcloudnkgbeta1magumag=0000zt8Ql_s1AT8YSUXs1RGO2lG:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=BD-CF-6C-83-EF-C4-A9-CC-62-F0-46-DB-20-CB-5A-06-A0-16-67-44-83-DB-42-E8-3D-92-69-09-7C-A0-FB-1C-DD-D3-F3-89-23-2D-9F-4D; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwsso_uniportal=QSBcefCUNL9dCvXPOSEknvtAgkTfG_a2jeIEmSxF3yLlx2iJ5kwb4izUr1_bV7QzFPhekswBIEzXlciDJFnQJdeJaxYhsxFbyt8VQFE_aK7oZYnc7GVuVo_aIwsuySjr_aSMTl7Eurf2LCRtIivQqMqUjohrKTZ_bIzoh8HcgMHgrUZCJYp7UYhn0LERMOK70jp4pq2HXpOfcjD0_aQ6MOoBFIHkC1SdtwSOa1a_bGHREznW4MaKQRvj7N6XDU7ovvLGwtrOCGdvlz_aO1l8HcfcJhaS5RiwYcJaTVmDmfxN15La9pEqyZAlr2l_bQclhdzoLS91ZVf2AQqJGr1xLsCeR3_bZpdYQ_c_c
+145053.973 P t4321 Network logFlag=in; hwssotinter=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; hwssot=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; magot3=26522615310251; mcloudnkgbeta1magumag=0000zt8Ql_s1AT8YSUXs1RGO2lG:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=BD-CF-6C-83-EF-C4-A9-CC-62-F0-46-DB-20-CB-5A-06-A0-16-67-44-83-DB-42-E8-3D-92-69-09-7C-A0-FB-1C-DD-D3-F3-89-23-2D-9F-4D; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwsso_uniportal=QSBcefCUNL9dCvXPOSEknvtAgkTfG_a2jeIEmSxF3yLlx2iJ5kwb4izUr1_bV7QzFPhekswBIEzXlciDJFnQJdeJaxYhsxFbyt8VQFE_aK7oZYnc7GVuVo_aIwsuySjr_aSMTl7Eurf2LCRtIivQqMqUjohrKTZ_bIzoh8HcgMHgrUZCJYp7UYhn0LERMOK70jp4pq2HXpOfcjD0_aQ6MOoBFIHkC1SdtwSOa1a_bGHREznW4MaKQRvj7N6XDU7ovvLGwtrOCGdvlz_aO1l8HcfcJhaS5RiwYcJaTVmDmfxN15La9pEqyZAlr2l_bQclhdzoLS91ZVf2AQqJGr1xLsCeR3_bZpdYQ_c_c
+145053.979 P t4321 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+145053.989 P t1 Login LoginTask endTime:2019-05-08 14:50:53:986
+145053.991 P t1 Login you does not compile lark-mdm.jar
+145053.993 P t1 Login use X86Storage
+145054.002 P t1 Login Login.login endTime:2019-05-08 14:50:53:999
+145054.004 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+145054.057 P t1 CookieUtils logFlag=in; hwssotinter=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; hwssot=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; magot3=26522615310251; mcloudnkgbeta1magumag=0000zt8Ql_s1AT8YSUXs1RGO2lG:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=BD-CF-6C-83-EF-C4-A9-CC-62-F0-46-DB-20-CB-5A-06-A0-16-67-44-83-DB-42-E8-3D-92-69-09-7C-A0-FB-1C-DD-D3-F3-89-23-2D-9F-4D; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwsso_uniportal=QSBcefCUNL9dCvXPOSEknvtAgkTfG_a2jeIEmSxF3yLlx2iJ5kwb4izUr1_bV7QzFPhekswBIEzXlciDJFnQJdeJaxYhsxFbyt8VQFE_aK7oZYnc7GVuVo_aIwsuySjr_aSMTl7Eurf2LCRtIivQqMqUjohrKTZ_bIzoh8HcgMHgrUZCJYp7UYhn0LERMOK70jp4pq2HXpOfcjD0_aQ6MOoBFIHkC1SdtwSOa1a_bGHREznW4MaKQRvj7N6XDU7ovvLGwtrOCGdvlz_aO1l8HcfcJhaS5RiwYcJaTVmDmfxN15La9pEqyZAlr2l_bQclhdzoLS91ZVf2AQqJGr1xLsCeR3_bZpdYQ_c_c
+145054.059 P t1 Network Network.get start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/sde_iot/test/all | null
+145054.062 P t1 Network traceId = 508475dd-11e3-4d29-9724-a5080946061d, uuid = ac1f1c3a262b1e9d
+145054.067 P t4321 CookieUtils logFlag=in; hwssotinter=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; hwssot=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; magot3=26522615310251; mcloudnkgbeta1magumag=0000zt8Ql_s1AT8YSUXs1RGO2lG:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=BD-CF-6C-83-EF-C4-A9-CC-62-F0-46-DB-20-CB-5A-06-A0-16-67-44-83-DB-42-E8-3D-92-69-09-7C-A0-FB-1C-DD-D3-F3-89-23-2D-9F-4D; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwsso_uniportal=QSBcefCUNL9dCvXPOSEknvtAgkTfG_a2jeIEmSxF3yLlx2iJ5kwb4izUr1_bV7QzFPhekswBIEzXlciDJFnQJdeJaxYhsxFbyt8VQFE_aK7oZYnc7GVuVo_aIwsuySjr_aSMTl7Eurf2LCRtIivQqMqUjohrKTZ_bIzoh8HcgMHgrUZCJYp7UYhn0LERMOK70jp4pq2HXpOfcjD0_aQ6MOoBFIHkC1SdtwSOa1a_bGHREznW4MaKQRvj7N6XDU7ovvLGwtrOCGdvlz_aO1l8HcfcJhaS5RiwYcJaTVmDmfxN15La9pEqyZAlr2l_bQclhdzoLS91ZVf2AQqJGr1xLsCeR3_bZpdYQ_c_c
+145054.075 P t4321 CookieUtils logFlag=in; hwssotinter=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; hwssot=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; magot3=26522615310251; mcloudnkgbeta1magumag=0000zt8Ql_s1AT8YSUXs1RGO2lG:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=BD-CF-6C-83-EF-C4-A9-CC-62-F0-46-DB-20-CB-5A-06-A0-16-67-44-83-DB-42-E8-3D-92-69-09-7C-A0-FB-1C-DD-D3-F3-89-23-2D-9F-4D; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwsso_uniportal=QSBcefCUNL9dCvXPOSEknvtAgkTfG_a2jeIEmSxF3yLlx2iJ5kwb4izUr1_bV7QzFPhekswBIEzXlciDJFnQJdeJaxYhsxFbyt8VQFE_aK7oZYnc7GVuVo_aIwsuySjr_aSMTl7Eurf2LCRtIivQqMqUjohrKTZ_bIzoh8HcgMHgrUZCJYp7UYhn0LERMOK70jp4pq2HXpOfcjD0_aQ6MOoBFIHkC1SdtwSOa1a_bGHREznW4MaKQRvj7N6XDU7ovvLGwtrOCGdvlz_aO1l8HcfcJhaS5RiwYcJaTVmDmfxN15La9pEqyZAlr2l_bQclhdzoLS91ZVf2AQqJGr1xLsCeR3_bZpdYQ_c_c
+145054.078 P t4321 Network logFlag=in; hwssotinter=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; hwssot=A7-FF-69-43-1D-13-1C-FB-89-92-3F-80-43-ED-B0-78; magot3=26522615310251; mcloudnkgbeta1magumag=0000zt8Ql_s1AT8YSUXs1RGO2lG:nkgts625j134mwc_CloneID; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sid=BD-CF-6C-83-EF-C4-A9-CC-62-F0-46-DB-20-CB-5A-06-A0-16-67-44-83-DB-42-E8-3D-92-69-09-7C-A0-FB-1C-DD-D3-F3-89-23-2D-9F-4D; sip=6C-4C-28-BD-0D-B3-85-EC-70-2A-BE-D3-F5-04-95-6C-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwsso_uniportal=QSBcefCUNL9dCvXPOSEknvtAgkTfG_a2jeIEmSxF3yLlx2iJ5kwb4izUr1_bV7QzFPhekswBIEzXlciDJFnQJdeJaxYhsxFbyt8VQFE_aK7oZYnc7GVuVo_aIwsuySjr_aSMTl7Eurf2LCRtIivQqMqUjohrKTZ_bIzoh8HcgMHgrUZCJYp7UYhn0LERMOK70jp4pq2HXpOfcjD0_aQ6MOoBFIHkC1SdtwSOa1a_bGHREznW4MaKQRvj7N6XDU7ovvLGwtrOCGdvlz_aO1l8HcfcJhaS5RiwYcJaTVmDmfxN15La9pEqyZAlr2l_bQclhdzoLS91ZVf2AQqJGr1xLsCeR3_bZpdYQ_c_c
+145054.083 P t4321 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+145337.471 P t1 Login Login.login startTime:2019-05-08 14:53:37:450
+145337.475 P t1 Login Login.structHeaderForLogin
+145337.485 P t1 Login EncUtils.getDefPubKey:uat
+145337.494 P t1 Login EncUtils.getDefPubKey:uat
+145337.504 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+145337.553 W t1 DeviceHelp  java.lang.SecurityException: getDeviceId
+	at android.os.Parcel.createException(Parcel.java:1953)
+	at android.os.Parcel.readException(Parcel.java:1921)
+	at android.os.Parcel.readException(Parcel.java:1871)
+	at com.android.internal.telephony.IHwTelephony$Stub$Proxy.getUniqueDeviceId(IHwTelephony.java:2066)
+	at android.telephony.HwTelephonyManagerInner.getUniqueDeviceId(HwTelephonyManagerInner.java:1096)
+	at android.telephony.HwInnerTelephonyManagerImpl.getUniqueDeviceId(HwInnerTelephonyManagerImpl.java:351)
+	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1259)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.getDeviceId(DeviceUtils.java:54)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.setDeviceAttributes(DeviceUtils.java:44)
+	at com.huawei.hae.mcloud.bundle.base.util.DeviceUtils.<init>(DeviceUtils.java:23)
+	at com.huawei.hae.mcloud.bundle.base.util.AppUtils.getDeviceId(AppUtils.java:150)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.defaultHeaders(OkHttpRequest.java:298)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.dealHeaders(OkHttpRequest.java:271)
+	at com.huawei.hae.mcloud.bundle.base.network.okhttp.request.OkHttpRequest$Builder.build(OkHttpRequest.java:156)
+	at com.huawei.hae.mcloud.bundle.base.network.NetworkAsync.post(NetworkAsync.java:81)
+	at com.huawei.hae.mcloud.bundle.base.network.Network.post(Network.java:50)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.request(Login.java:56)
+	at com.huawei.hae.mcloud.bundle.base.login.Login.login(Login.java:47)
+	at com.huawei.hae.mcloud.bundle.base.Lark.login(Lark.java:87)
+	at com.huawei.sde.iot.ui.LoginActivity.login(LoginActivity.java:132)
+	at com.huawei.sde.iot.ui.LoginActivity.doLogin(LoginActivity.java:52)
+	at com.huawei.sde.iot.ui.LoginActivity_ViewBinding$1.doClick(LoginActivity_ViewBinding.java:40)
+	at butterknife.internal.DebouncingOnClickListener.onClick(DebouncingOnClickListener.java:22)
+	at android.view.View.performClick(View.java:6648)
+	at android.view.View.performClickInternal(View.java:6620)
+	at android.view.View.access$3100(View.java:787)
+	at android.view.View$PerformClick.run(View.java:26167)
+	at android.os.Handler.handleCallback(Handler.java:891)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.app.ActivityThread.main(ActivityThread.java:7539)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+
+145337.570 P t1 Network traceId = 97873bc3-8378-469b-947e-dcd30f382fe8, uuid = ac1f1c3a262b1e9d
+145338.345 P t4330 Network traceId = 97873bc3-8378-469b-947e-dcd30f382fe8, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+145338.385 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+145338.400 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+145338.407 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+145338.411 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+145338.416 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+145338.419 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+145338.441 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+145338.456 P t1 CookieUtils logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwssotinter=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; hwssot=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; magot3=26522616012321; mcloudnkgbeta1magumag=0000NB8pTy1vvd17h567XpU9NQD:nkgts625j134mwc_CloneID; sid=40-EA-98-CA-74-6C-3A-28-1A-93-6A-0E-B0-D7-ED-2B-27-37-2B-01-8E-D0-12-C9-9D-3F-45-C8-6E-DF-7F-33-7A-A6-F6-C2-9F-80-02-57; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=OKPNU0qqvGvVi051sta48qstCQ5GDhhEcb_aDa19AqN66ivZkmZnkicphBWQ_bDQLSfzEDvaOMRhP0AMA0ERMjUmkMnP2AhjV0kS_b0IcCNnyqbpj6VjDFpAG7dBWo5lQ2jmw5ZZ0YHTP_bMeDlaBwXbppJiz4vNESDoJ_apdEyHhNynul15G0Qy3UhU_aFKEA1YEGzZjMM_blKbRnGFRmb_byt_a34vduY9hmlBsdbCQh_b7RQH_bqJU64Hk4MHfdq_a8XZ8oueOikG5kPQ2Pe0_bIuc4pLS1vAcMsnPpgQQjCfbkzsjW_bF8TiS3jIr0S49xUsND6Q01UxxsLWkVUqCnDjAonEnaJw_c_c
+145338.463 P t1 Network traceId = ca4093a0-339a-4908-9693-bd5375dc8249, uuid = ac1f1c3a262b1e9d
+145338.469 P t4330 CookieUtils logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwssotinter=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; hwssot=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; magot3=26522616012321; mcloudnkgbeta1magumag=0000NB8pTy1vvd17h567XpU9NQD:nkgts625j134mwc_CloneID; sid=40-EA-98-CA-74-6C-3A-28-1A-93-6A-0E-B0-D7-ED-2B-27-37-2B-01-8E-D0-12-C9-9D-3F-45-C8-6E-DF-7F-33-7A-A6-F6-C2-9F-80-02-57; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=OKPNU0qqvGvVi051sta48qstCQ5GDhhEcb_aDa19AqN66ivZkmZnkicphBWQ_bDQLSfzEDvaOMRhP0AMA0ERMjUmkMnP2AhjV0kS_b0IcCNnyqbpj6VjDFpAG7dBWo5lQ2jmw5ZZ0YHTP_bMeDlaBwXbppJiz4vNESDoJ_apdEyHhNynul15G0Qy3UhU_aFKEA1YEGzZjMM_blKbRnGFRmb_byt_a34vduY9hmlBsdbCQh_b7RQH_bqJU64Hk4MHfdq_a8XZ8oueOikG5kPQ2Pe0_bIuc4pLS1vAcMsnPpgQQjCfbkzsjW_bF8TiS3jIr0S49xUsND6Q01UxxsLWkVUqCnDjAonEnaJw_c_c
+145338.474 P t4330 Network logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwssotinter=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; hwssot=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; magot3=26522616012321; mcloudnkgbeta1magumag=0000NB8pTy1vvd17h567XpU9NQD:nkgts625j134mwc_CloneID; sid=40-EA-98-CA-74-6C-3A-28-1A-93-6A-0E-B0-D7-ED-2B-27-37-2B-01-8E-D0-12-C9-9D-3F-45-C8-6E-DF-7F-33-7A-A6-F6-C2-9F-80-02-57; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=OKPNU0qqvGvVi051sta48qstCQ5GDhhEcb_aDa19AqN66ivZkmZnkicphBWQ_bDQLSfzEDvaOMRhP0AMA0ERMjUmkMnP2AhjV0kS_b0IcCNnyqbpj6VjDFpAG7dBWo5lQ2jmw5ZZ0YHTP_bMeDlaBwXbppJiz4vNESDoJ_apdEyHhNynul15G0Qy3UhU_aFKEA1YEGzZjMM_blKbRnGFRmb_byt_a34vduY9hmlBsdbCQh_b7RQH_bqJU64Hk4MHfdq_a8XZ8oueOikG5kPQ2Pe0_bIuc4pLS1vAcMsnPpgQQjCfbkzsjW_bF8TiS3jIr0S49xUsND6Q01UxxsLWkVUqCnDjAonEnaJw_c_c
+145338.483 P t4330 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+145338.490 P t1 Login LoginTask endTime:2019-05-08 14:53:38:487
+145338.493 P t1 Login you does not compile lark-mdm.jar
+145338.495 P t1 Login use X86Storage
+145338.503 P t1 Login Login.login endTime:2019-05-08 14:53:38:500
+145338.505 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+145338.560 P t1 CookieUtils logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwssotinter=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; hwssot=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; magot3=26522616012321; mcloudnkgbeta1magumag=0000NB8pTy1vvd17h567XpU9NQD:nkgts625j134mwc_CloneID; sid=40-EA-98-CA-74-6C-3A-28-1A-93-6A-0E-B0-D7-ED-2B-27-37-2B-01-8E-D0-12-C9-9D-3F-45-C8-6E-DF-7F-33-7A-A6-F6-C2-9F-80-02-57; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=OKPNU0qqvGvVi051sta48qstCQ5GDhhEcb_aDa19AqN66ivZkmZnkicphBWQ_bDQLSfzEDvaOMRhP0AMA0ERMjUmkMnP2AhjV0kS_b0IcCNnyqbpj6VjDFpAG7dBWo5lQ2jmw5ZZ0YHTP_bMeDlaBwXbppJiz4vNESDoJ_apdEyHhNynul15G0Qy3UhU_aFKEA1YEGzZjMM_blKbRnGFRmb_byt_a34vduY9hmlBsdbCQh_b7RQH_bqJU64Hk4MHfdq_a8XZ8oueOikG5kPQ2Pe0_bIuc4pLS1vAcMsnPpgQQjCfbkzsjW_bF8TiS3jIr0S49xUsND6Q01UxxsLWkVUqCnDjAonEnaJw_c_c
+145338.562 P t1 Network Network.get start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/sde_iot/test/all | {cookie:logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwssotinter=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; hwssot=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; magot3=26522616012321; mcloudnkgbeta1magumag=0000NB8pTy1vvd17h567XpU9NQD:nkgts625j134mwc_CloneID; sid=40-EA-98-CA-74-6C-3A-28-1A-93-6A-0E-B0-D7-ED-2B-27-37-2B-01-8E-D0-12-C9-9D-3F-45-C8-6E-DF-7F-33-7A-A6-F6-C2-9F-80-02-57; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=OKPNU0qqvGvVi051sta48qstCQ5GDhhEcb_aDa19AqN66ivZkmZnkicphBWQ_bDQLSfzEDvaOMRhP0AMA0ERMjUmkMnP2AhjV0kS_b0IcCNnyqbpj6VjDFpAG7dBWo5lQ2jmw5ZZ0YHTP_bMeDlaBwXbppJiz4vNESDoJ_apdEyHhNynul15G0Qy3UhU_aFKEA1YEGzZjMM_blKbRnGFRmb_byt_a34vduY9hmlBsdbCQh_b7RQH_bqJU64Hk4MHfdq_a8XZ8oueOikG5kPQ2Pe0_bIuc4pLS1vAcMsnPpgQQjCfbkzsjW_bF8TiS3jIr0S49xUsND6Q01UxxsLWkVUqCnDjAonEnaJw_c_c}
+145338.564 P t1 Network traceId = ac9013b7-6802-42b7-a0a4-76b41b4f80a3, uuid = ac1f1c3a262b1e9d
+145338.569 P t4330 CookieUtils logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwssotinter=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; hwssot=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; magot3=26522616012321; mcloudnkgbeta1magumag=0000NB8pTy1vvd17h567XpU9NQD:nkgts625j134mwc_CloneID; sid=40-EA-98-CA-74-6C-3A-28-1A-93-6A-0E-B0-D7-ED-2B-27-37-2B-01-8E-D0-12-C9-9D-3F-45-C8-6E-DF-7F-33-7A-A6-F6-C2-9F-80-02-57; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=OKPNU0qqvGvVi051sta48qstCQ5GDhhEcb_aDa19AqN66ivZkmZnkicphBWQ_bDQLSfzEDvaOMRhP0AMA0ERMjUmkMnP2AhjV0kS_b0IcCNnyqbpj6VjDFpAG7dBWo5lQ2jmw5ZZ0YHTP_bMeDlaBwXbppJiz4vNESDoJ_apdEyHhNynul15G0Qy3UhU_aFKEA1YEGzZjMM_blKbRnGFRmb_byt_a34vduY9hmlBsdbCQh_b7RQH_bqJU64Hk4MHfdq_a8XZ8oueOikG5kPQ2Pe0_bIuc4pLS1vAcMsnPpgQQjCfbkzsjW_bF8TiS3jIr0S49xUsND6Q01UxxsLWkVUqCnDjAonEnaJw_c_c
+145338.573 P t4330 CookieUtils logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwssotinter=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; hwssot=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; magot3=26522616012321; mcloudnkgbeta1magumag=0000NB8pTy1vvd17h567XpU9NQD:nkgts625j134mwc_CloneID; sid=40-EA-98-CA-74-6C-3A-28-1A-93-6A-0E-B0-D7-ED-2B-27-37-2B-01-8E-D0-12-C9-9D-3F-45-C8-6E-DF-7F-33-7A-A6-F6-C2-9F-80-02-57; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=OKPNU0qqvGvVi051sta48qstCQ5GDhhEcb_aDa19AqN66ivZkmZnkicphBWQ_bDQLSfzEDvaOMRhP0AMA0ERMjUmkMnP2AhjV0kS_b0IcCNnyqbpj6VjDFpAG7dBWo5lQ2jmw5ZZ0YHTP_bMeDlaBwXbppJiz4vNESDoJ_apdEyHhNynul15G0Qy3UhU_aFKEA1YEGzZjMM_blKbRnGFRmb_byt_a34vduY9hmlBsdbCQh_b7RQH_bqJU64Hk4MHfdq_a8XZ8oueOikG5kPQ2Pe0_bIuc4pLS1vAcMsnPpgQQjCfbkzsjW_bF8TiS3jIr0S49xUsND6Q01UxxsLWkVUqCnDjAonEnaJw_c_c
+145338.575 P t4330 Network logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; hwssotinter=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; hwssot=29-35-A2-1E-59-46-77-01-DF-71-D9-B2-9E-B8-15-A4; magot3=26522616012321; mcloudnkgbeta1magumag=0000NB8pTy1vvd17h567XpU9NQD:nkgts625j134mwc_CloneID; sid=40-EA-98-CA-74-6C-3A-28-1A-93-6A-0E-B0-D7-ED-2B-27-37-2B-01-8E-D0-12-C9-9D-3F-45-C8-6E-DF-7F-33-7A-A6-F6-C2-9F-80-02-57; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwsso_uniportal=OKPNU0qqvGvVi051sta48qstCQ5GDhhEcb_aDa19AqN66ivZkmZnkicphBWQ_bDQLSfzEDvaOMRhP0AMA0ERMjUmkMnP2AhjV0kS_b0IcCNnyqbpj6VjDFpAG7dBWo5lQ2jmw5ZZ0YHTP_bMeDlaBwXbppJiz4vNESDoJ_apdEyHhNynul15G0Qy3UhU_aFKEA1YEGzZjMM_blKbRnGFRmb_byt_a34vduY9hmlBsdbCQh_b7RQH_bqJU64Hk4MHfdq_a8XZ8oueOikG5kPQ2Pe0_bIuc4pLS1vAcMsnPpgQQjCfbkzsjW_bF8TiS3jIr0S49xUsND6Q01UxxsLWkVUqCnDjAonEnaJw_c_c
+145338.582 P t4330 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+150348.013 P t1 Login Login.login startTime:2019-05-08 15:03:48:011
+150348.015 P t1 Login Login.structHeaderForLogin
+150348.018 P t1 Login EncUtils.getDefPubKey:uat
+150348.021 P t1 Login EncUtils.getDefPubKey:uat
+150348.023 P t1 Network Network.form start. inParams:https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg | {mCloudSdkVersion:2.3.1, needCookie:false, nflag:1, osVersion:28, osTarget:0, isp:%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8, networkType:4G, deviceName:android_PCT-AL10_9}
+150348.027 P t1 Network traceId = c9832618-dcf3-4506-b096-8e72fc853834, uuid = ac1f1c3a262b1e9d
+150348.655 P t4346 Network traceId = c9832618-dcf3-4506-b096-8e72fc853834, selected protocol:h2, url = https://mcloud-uat.huawei.com/mcloud/umag/LoginAutoReg
+150348.660 P t1 Login httpProtocol:1.1 ;domain:w3m-beta.huawei.com
+150348.661 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.lark.mdm.MDMConstants
+150348.663 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.barcode.utils.BarcodeConstants
+150348.664 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.hae.mcloud.bundle.edm.EDMConstants
+150348.665 P t1 Login [ReflectUtils.getFiledValue] Didn't find class: com.huawei.his.lib.internal.MPRuntimeConstant
+150348.666 P t1 VersionHelper start upload versions:Huawei, 1.0, {base=1.9.5}
+150348.668 P t1 Network Network.post start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/mamservice/rest/LarkBundle/reportBundleInfo | null
+150348.671 P t1 CookieUtils logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; hwssot=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; magot3=26522620262550; mcloudnkgbeta1magumag=0000Qu-l3GT9JPox75vkEjWW_si:nkgts625j134mwc_CloneID; sid=B2-D4-57-A8-FE-9B-9E-D0-6D-B9-C3-D6-9F-BE-41-B8-3E-90-A2-C5-2F-4B-F2-C8-57-56-B3-DA-42-15-AA-96-3D-C6-43-0B-6F-0A-7C-1C; hwsso_uniportal=DBF2WCNMH9FyEwZD_b5JanNH8ktrGhAikR6Hun1_aP_akv5L0zI56PNLpst4sT3NTp41lfNb_ag0sdhSqGcbFmODCkwW5AmI9c9voXWQ2Uesj8Gsc1_b5H1CRRg9t2OVunv6rrRNfitVKB1OjrqFfh5o7E7esM2HCjH4XJkIP1vqQJ7FxzQSXfIi3xDswESYPS3kG1S5pKKG3jXifF_ay7NiAqq_bgoOD3G_aGLk8J_beuCAqA2tQV10_ay6HLLbZgm5b9PZPqouYwcIX7YI5d9QH8gE4yjH3jnrSbheZe8pgclPqxlH_bnpxJEqW6e5bRJUgvQzosDjGemkLsZkvB_bzNvl9oe4GQ_c_c
+150348.673 P t1 Network traceId = 11a63707-81e1-44b2-bcb3-ea9059befe6a, uuid = ac1f1c3a262b1e9d
+150348.676 P t4346 CookieUtils logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; hwssot=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; magot3=26522620262550; mcloudnkgbeta1magumag=0000Qu-l3GT9JPox75vkEjWW_si:nkgts625j134mwc_CloneID; sid=B2-D4-57-A8-FE-9B-9E-D0-6D-B9-C3-D6-9F-BE-41-B8-3E-90-A2-C5-2F-4B-F2-C8-57-56-B3-DA-42-15-AA-96-3D-C6-43-0B-6F-0A-7C-1C; hwsso_uniportal=DBF2WCNMH9FyEwZD_b5JanNH8ktrGhAikR6Hun1_aP_akv5L0zI56PNLpst4sT3NTp41lfNb_ag0sdhSqGcbFmODCkwW5AmI9c9voXWQ2Uesj8Gsc1_b5H1CRRg9t2OVunv6rrRNfitVKB1OjrqFfh5o7E7esM2HCjH4XJkIP1vqQJ7FxzQSXfIi3xDswESYPS3kG1S5pKKG3jXifF_ay7NiAqq_bgoOD3G_aGLk8J_beuCAqA2tQV10_ay6HLLbZgm5b9PZPqouYwcIX7YI5d9QH8gE4yjH3jnrSbheZe8pgclPqxlH_bnpxJEqW6e5bRJUgvQzosDjGemkLsZkvB_bzNvl9oe4GQ_c_c
+150348.677 P t4346 Network logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; hwssot=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; magot3=26522620262550; mcloudnkgbeta1magumag=0000Qu-l3GT9JPox75vkEjWW_si:nkgts625j134mwc_CloneID; sid=B2-D4-57-A8-FE-9B-9E-D0-6D-B9-C3-D6-9F-BE-41-B8-3E-90-A2-C5-2F-4B-F2-C8-57-56-B3-DA-42-15-AA-96-3D-C6-43-0B-6F-0A-7C-1C; hwsso_uniportal=DBF2WCNMH9FyEwZD_b5JanNH8ktrGhAikR6Hun1_aP_akv5L0zI56PNLpst4sT3NTp41lfNb_ag0sdhSqGcbFmODCkwW5AmI9c9voXWQ2Uesj8Gsc1_b5H1CRRg9t2OVunv6rrRNfitVKB1OjrqFfh5o7E7esM2HCjH4XJkIP1vqQJ7FxzQSXfIi3xDswESYPS3kG1S5pKKG3jXifF_ay7NiAqq_bgoOD3G_aGLk8J_beuCAqA2tQV10_ay6HLLbZgm5b9PZPqouYwcIX7YI5d9QH8gE4yjH3jnrSbheZe8pgclPqxlH_bnpxJEqW6e5bRJUgvQzosDjGemkLsZkvB_bzNvl9oe4GQ_c_c
+150348.680 P t4346 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+150348.688 P t1 Login LoginTask endTime:2019-05-08 15:03:48:686
+150348.693 P t1 Login Login.login endTime:2019-05-08 15:03:48:692
+150348.695 P t1 VersionHelper code:-1, message:java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
+150348.724 P t1 CookieUtils logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; hwssot=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; magot3=26522620262550; mcloudnkgbeta1magumag=0000Qu-l3GT9JPox75vkEjWW_si:nkgts625j134mwc_CloneID; sid=B2-D4-57-A8-FE-9B-9E-D0-6D-B9-C3-D6-9F-BE-41-B8-3E-90-A2-C5-2F-4B-F2-C8-57-56-B3-DA-42-15-AA-96-3D-C6-43-0B-6F-0A-7C-1C; hwsso_uniportal=DBF2WCNMH9FyEwZD_b5JanNH8ktrGhAikR6Hun1_aP_akv5L0zI56PNLpst4sT3NTp41lfNb_ag0sdhSqGcbFmODCkwW5AmI9c9voXWQ2Uesj8Gsc1_b5H1CRRg9t2OVunv6rrRNfitVKB1OjrqFfh5o7E7esM2HCjH4XJkIP1vqQJ7FxzQSXfIi3xDswESYPS3kG1S5pKKG3jXifF_ay7NiAqq_bgoOD3G_aGLk8J_beuCAqA2tQV10_ay6HLLbZgm5b9PZPqouYwcIX7YI5d9QH8gE4yjH3jnrSbheZe8pgclPqxlH_bnpxJEqW6e5bRJUgvQzosDjGemkLsZkvB_bzNvl9oe4GQ_c_c
+150348.725 P t1 Network Network.get start. inParams:http://mcloud-uat.huawei.com/mcloud/umag/ProxyForText/sde_iot/test/all | {cookie:logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; hwssot=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; magot3=26522620262550; mcloudnkgbeta1magumag=0000Qu-l3GT9JPox75vkEjWW_si:nkgts625j134mwc_CloneID; sid=B2-D4-57-A8-FE-9B-9E-D0-6D-B9-C3-D6-9F-BE-41-B8-3E-90-A2-C5-2F-4B-F2-C8-57-56-B3-DA-42-15-AA-96-3D-C6-43-0B-6F-0A-7C-1C; hwsso_uniportal=DBF2WCNMH9FyEwZD_b5JanNH8ktrGhAikR6Hun1_aP_akv5L0zI56PNLpst4sT3NTp41lfNb_ag0sdhSqGcbFmODCkwW5AmI9c9voXWQ2Uesj8Gsc1_b5H1CRRg9t2OVunv6rrRNfitVKB1OjrqFfh5o7E7esM2HCjH4XJkIP1vqQJ7FxzQSXfIi3xDswESYPS3kG1S5pKKG3jXifF_ay7NiAqq_bgoOD3G_aGLk8J_beuCAqA2tQV10_ay6HLLbZgm5b9PZPqouYwcIX7YI5d9QH8gE4yjH3jnrSbheZe8pgclPqxlH_bnpxJEqW6e5bRJUgvQzosDjGemkLsZkvB_bzNvl9oe4GQ_c_c}
+150348.727 P t1 Network traceId = a521d8bf-b7d5-40c6-a384-24426a8aa3f7, uuid = ac1f1c3a262b1e9d
+150348.731 P t4346 CookieUtils logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; hwssot=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; magot3=26522620262550; mcloudnkgbeta1magumag=0000Qu-l3GT9JPox75vkEjWW_si:nkgts625j134mwc_CloneID; sid=B2-D4-57-A8-FE-9B-9E-D0-6D-B9-C3-D6-9F-BE-41-B8-3E-90-A2-C5-2F-4B-F2-C8-57-56-B3-DA-42-15-AA-96-3D-C6-43-0B-6F-0A-7C-1C; hwsso_uniportal=DBF2WCNMH9FyEwZD_b5JanNH8ktrGhAikR6Hun1_aP_akv5L0zI56PNLpst4sT3NTp41lfNb_ag0sdhSqGcbFmODCkwW5AmI9c9voXWQ2Uesj8Gsc1_b5H1CRRg9t2OVunv6rrRNfitVKB1OjrqFfh5o7E7esM2HCjH4XJkIP1vqQJ7FxzQSXfIi3xDswESYPS3kG1S5pKKG3jXifF_ay7NiAqq_bgoOD3G_aGLk8J_beuCAqA2tQV10_ay6HLLbZgm5b9PZPqouYwcIX7YI5d9QH8gE4yjH3jnrSbheZe8pgclPqxlH_bnpxJEqW6e5bRJUgvQzosDjGemkLsZkvB_bzNvl9oe4GQ_c_c
+150348.735 P t4346 CookieUtils logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; hwssot=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; magot3=26522620262550; mcloudnkgbeta1magumag=0000Qu-l3GT9JPox75vkEjWW_si:nkgts625j134mwc_CloneID; sid=B2-D4-57-A8-FE-9B-9E-D0-6D-B9-C3-D6-9F-BE-41-B8-3E-90-A2-C5-2F-4B-F2-C8-57-56-B3-DA-42-15-AA-96-3D-C6-43-0B-6F-0A-7C-1C; hwsso_uniportal=DBF2WCNMH9FyEwZD_b5JanNH8ktrGhAikR6Hun1_aP_akv5L0zI56PNLpst4sT3NTp41lfNb_ag0sdhSqGcbFmODCkwW5AmI9c9voXWQ2Uesj8Gsc1_b5H1CRRg9t2OVunv6rrRNfitVKB1OjrqFfh5o7E7esM2HCjH4XJkIP1vqQJ7FxzQSXfIi3xDswESYPS3kG1S5pKKG3jXifF_ay7NiAqq_bgoOD3G_aGLk8J_beuCAqA2tQV10_ay6HLLbZgm5b9PZPqouYwcIX7YI5d9QH8gE4yjH3jnrSbheZe8pgclPqxlH_bnpxJEqW6e5bRJUgvQzosDjGemkLsZkvB_bzNvl9oe4GQ_c_c
+150348.737 P t4346 Network logFlag=in; uid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; suid=22-62-45-AE-83-9A-78-6E-1C-BC-56-41-9E-69-20-A1; sip=6C-4C-28-BD-0D-B3-85-EC-77-74-98-B6-48-1B-11-08-E3-8E-BC-1E-43-89-77-B6-21-53-7A-A4-82-3F-DF-3C; hwssotinter=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; hwssot=59-03-45-14-66-00-50-D7-BF-B4-FD-FB-65-56-C0-59; magot3=26522620262550; mcloudnkgbeta1magumag=0000Qu-l3GT9JPox75vkEjWW_si:nkgts625j134mwc_CloneID; sid=B2-D4-57-A8-FE-9B-9E-D0-6D-B9-C3-D6-9F-BE-41-B8-3E-90-A2-C5-2F-4B-F2-C8-57-56-B3-DA-42-15-AA-96-3D-C6-43-0B-6F-0A-7C-1C; hwsso_uniportal=DBF2WCNMH9FyEwZD_b5JanNH8ktrGhAikR6Hun1_aP_akv5L0zI56PNLpst4sT3NTp41lfNb_ag0sdhSqGcbFmODCkwW5AmI9c9voXWQ2Uesj8Gsc1_b5H1CRRg9t2OVunv6rrRNfitVKB1OjrqFfh5o7E7esM2HCjH4XJkIP1vqQJ7FxzQSXfIi3xDswESYPS3kG1S5pKKG3jXifF_ay7NiAqq_bgoOD3G_aGLk8J_beuCAqA2tQV10_ay6HLLbZgm5b9PZPqouYwcIX7YI5d9QH8gE4yjH3jnrSbheZe8pgclPqxlH_bnpxJEqW6e5bRJUgvQzosDjGemkLsZkvB_bzNvl9oe4GQ_c_c
+150348.741 P t4346 Network OkHttpHelper.sendFailCallback end. outParams:-1 | java.net.UnknownServiceException: CLEARTEXT communication to mcloud-uat.huawei.com not permitted by network security policy
