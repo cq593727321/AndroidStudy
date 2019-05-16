@@ -14,7 +14,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -24,15 +24,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".ui.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ui.LoginActivity" />
         <activity android:name=".ui.setting.DeviceConnectActivity" />
-        <activity android:name=".ui.test.TestActivity" />
+        <activity android:name=".ui.test.TestActivity">
+
+        </activity>
         <!-- 环境:sit/uat/pro -->
         <meta-data
             android:name="env"
@@ -50,7 +46,15 @@
         <activity android:name=".ui.setting.LocationListActivity" />
         <activity android:name=".ui.setting.EditAndSaveLocationActivity" />
         <activity android:name=".ui.bind.AccountingScanActivity" />
-        <activity android:name=".ui.bind.BindActivity"></activity>
+        <activity android:name=".ui.bind.BindActivity" />
+        <activity android:name=".ui.test.A8UHFActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.test.A8UHFReceiveActivity"></activity>
     </application>
 
 </manifest>
