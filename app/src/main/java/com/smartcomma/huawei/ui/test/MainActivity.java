@@ -102,6 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String infoMsg = String.format(Locale.US, "\nRSSI: %d  PC: %04X  CRC: %04X", transponder.getRssi(), transponder.getPc(), transponder.getCrc());
                 //sendMessageNotification("EPC: " + transponder.getEpc() + infoMsg + "\nTID: " + tidMessage );
                 Log.e("TAG", "transponderReceived:EPC: " + transponder.getEpc());
+
                 mTagsSeen++;
                 if (!moreAvailable) {
                     Log.d("TagCount", String.format("Tags seen: %s", mTagsSeen));
@@ -169,7 +170,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
         }
-
-
     }
 }

@@ -1,5 +1,7 @@
 package com.smartcomma.huawei.ui.base;
 
+import android.app.Activity;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -8,11 +10,18 @@ import android.view.ViewGroup;
 
 import butterknife.ButterKnife;
 
-public class CommonActivity extends AppCompatActivity implements IBaseAction {
+public abstract class CommonActivity extends AppCompatActivity implements IBaseAction {
+    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setCanceledOnTouchOutside(false);
+        progressDialog.setCancelable(true);
+        progressDialog.setTitle("loading...");
+        initView();
+        initController();
         initView();
         initController();
     }
@@ -35,13 +44,19 @@ public class CommonActivity extends AppCompatActivity implements IBaseAction {
         ButterKnife.bind(this);
     }
 
-    @Override
-    public void initView() {
-
+    public void showLoadingDialog(Activity activity, String title) {
+        if (activity != null && !activity.isFinishing() && !activity.isDestroyed()) {
+            if (progressDialog != null) {
+                progressDialog.setMessage(title);
+                progressDialog.show();
+            }
+        }
     }
 
-    @Override
-    public void initController() {
-
+    public void cancelLoadingDialog(Activity activity) {
+        if (activity != null && !activity.isFinishing() && !activity.isDestroyed()) {
+            if (progressDialog != null && progressDialog.isShowing()) progressDialog.dismiss();
+        }
     }
+
 }
