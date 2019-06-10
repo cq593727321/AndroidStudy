@@ -1,46 +1,54 @@
 package com.smartcomma.huawei.utils;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.smartcomma.huawei.MyApplication;
+import com.smartcomma.huawei.R;
 
 public final class ToastUtil {
-    private ToastUtil() {
+    private Toast mToast = null;
+    private Context mCtx;
+    private static ToastUtil mToastUtil = null;
 
+    public ToastUtil(Context ctx) {
+        mCtx = ctx;
     }
 
-    //toast 单例
-    private static Toast sToast;
-    //默认的xOffset
-    private static int sDefaultXOffset;
-    //默认的yOffset
-    private static int sDefaultYOffset;
+    public static ToastUtil getInstance(Context ctx) {
+        if (mToastUtil == null)
+            mToastUtil = new ToastUtil(ctx);
+        return mToastUtil;
+    }
 
-
-    private static void createToast(CharSequence msg, int duration) {
-        if (sToast == null) {
-            //创建Toast单例，并保存默认的xOffset和yOffset
-            sToast = Toast.makeText(MyApplication.getContext(), "", Toast.LENGTH_SHORT);
-            sDefaultXOffset = sToast.getXOffset();
-            sDefaultYOffset = sToast.getYOffset();
+    public void showToast(String text, int duration) {
+        if (mToast == null) {
+            mToast = makeText(mCtx, text, duration);
+        } else {
+            ((TextView) mToast.getView().findViewById(R.id.TextViewInfo)).setText(text);
         }
-        //修改message、duration
-        sToast.setText(msg);
-        sToast.setDuration(duration);
+        mToast.show();
     }
 
-    //默认位置显示Toast
-    public static void showToast(CharSequence msg, int duration) {
-        createToast(msg, duration);
-        sToast.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, sDefaultXOffset, sDefaultYOffset);
-        sToast.show();
+    public void cancelToast() {
+        if (mToast != null) {
+            mToast.cancel();
+        }
     }
 
-    //居中显示Toast
-    public static void showCenterToast(CharSequence msg, int duration) {
-        createToast(msg, duration);
-        sToast.setGravity(Gravity.CENTER, 0, 0);
-        sToast.show();
+    public Toast makeText(Context context, String msg, int duration) {
+        @SuppressLint("WrongConstant") View toastRoot = ((LayoutInflater) context.getSystemService("layout_inflater")).inflate(R.layout.my_toast, null);
+        Toast toast = new Toast(context);
+        toast.setView(toastRoot);
+        TextView tv = (TextView) toastRoot.findViewById(R.id.TextViewInfo);
+        tv.getBackground().setAlpha(100);
+        tv.setText(msg);
+        toast.setDuration(duration);
+        return toast;
     }
 }
