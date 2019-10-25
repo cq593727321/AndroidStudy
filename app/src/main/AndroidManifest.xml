@@ -5,8 +5,7 @@
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <!-- 华为 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 华为 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -14,7 +13,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -24,6 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
+        <activity android:name=".ui.A20UHFActivity"></activity>
         <activity android:name=".ui.LoginActivity" />
         <activity android:name=".ui.setting.DeviceConnectActivity" />
         <activity android:name=".ui.test.TestActivity">
@@ -32,13 +33,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- 环境:sit/uat/pro -->
+        </activity> <!-- 环境:sit/uat/pro -->
         <meta-data
             android:name="env"
-            android:value="uat" />
-
-        <!-- false:内网，true:为外网 -->
+            android:value="uat" /> <!-- false:内网，true:为外网 -->
         <meta-data
             android:name="uniportal"
             android:value="true" />
@@ -51,10 +49,8 @@
         <activity android:name=".ui.setting.EditAndSaveLocationActivity" />
         <activity android:name=".ui.bind.AccountingScanActivity" />
         <activity android:name=".ui.bind.BindActivity" />
-        <activity android:name=".ui.test.A8UHFActivity">
-
-        </activity>
-        <activity android:name=".ui.test.A8UHFReceiveActivity"></activity>
+        <activity android:name=".ui.test.A8UHFActivity"></activity>
+        <activity android:name=".ui.test.A8UHFReceiveActivity" />
     </application>
 
 </manifest>

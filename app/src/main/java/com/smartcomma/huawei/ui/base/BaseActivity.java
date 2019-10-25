@@ -23,6 +23,7 @@ import com.smartcomma.huawei.ui.test.PowerMoniter;
 import com.smartcomma.huawei.ui.test.SoundUtil;
 import com.smartcomma.huawei.ui.test.UhfDev;
 import com.smartcomma.huawei.utils.LocalUtils;
+import com.smartcomma.huawei.utils.a20.barcode.ScanUtil;
 import com.uk.tsl.rfid.asciiprotocol.commands.BarcodeCommand;
 import com.uk.tsl.rfid.asciiprotocol.commands.InventoryCommand;
 import com.uk.tsl.rfid.asciiprotocol.enumerations.TriState;
@@ -59,6 +60,10 @@ public abstract class BaseActivity extends CommonActivity {
     // The command to use as a responder to capture incoming barcode responses
     private BarcodeCommand mBarcodeResponder;
     //TSL
+
+
+    //a20
+    private ScanUtil scanUtil;
 
     protected abstract void BarcodeReceiver(String barcode);
 
@@ -110,6 +115,18 @@ public abstract class BaseActivity extends CommonActivity {
 
     };
 
+    private BroadcastReceiver a20BarcodeReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            byte[] data = intent.getByteArrayExtra("data");
+            if (data != null) {
+                String barcode = new String(data);
+                // String barcode = Tools.Bytes2HexString(data, data.length);
+                BarcodeReceiver(barcode);
+            }
+        }
+    };
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -146,12 +163,32 @@ public abstract class BaseActivity extends CommonActivity {
         super.onResume();
         IntentFilter filter = new IntentFilter("scan.rcv.message");
         registerReceiver(mScanReceiver, filter);//先施A8条码广播
+
+        //a20
+        IntentFilter filterA20 = new IntentFilter();
+        filterA20.addAction("com.rfid.SCAN");
+        registerReceiver(a20BarcodeReceiver, filterA20);
+
+        if (scanUtil == null) {
+            scanUtil = new ScanUtil(this);
+            //we must set mode to 0 : BroadcastReceiver mode
+            scanUtil.setScanMode(0);
+        }
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         unregisterReceiver(mScanReceiver);
+
+        //a20
+        unregisterReceiver(a20BarcodeReceiver);
+        if (scanUtil != null) {
+            // When exit, set mode to 1 : EditText input mode, for the background scanning
+            scanUtil.setScanMode(1);
+            scanUtil.close();
+            scanUtil = null;
+        }
     }
 
     @Override
@@ -326,7 +363,7 @@ public abstract class BaseActivity extends CommonActivity {
     }
 
     ///////////////////////////////////////////TSL////////////////////////////////////////////////////
-    private void initTSL(){
+    private void initTSL() {
         mInventoryCommand = new InventoryCommand();
 
         // Configure the type of inventory
